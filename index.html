@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Эльмира — Код твоих потребностей</title>
+
+    <meta
+        name="description"
+        content="Эльмира — эксперт по управлению эмоциями и автор метода «Код твоих потребностей»."
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #1A2340;
+            background: #F5F1E8;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: 0 auto;
+        }
+
+        /* ---------------- HEADER ---------------- */
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 0;
+            z-index: 10;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+            font-size: 14px;
+        }
+
+        nav a {
+            opacity: .7;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        /* ---------------- HERO ---------------- */
+
+        .hero {
+            min-height: 760px;
+            padding: 130px 0 80px;
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(199, 78, 82, .16),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(212, 175, 55, .16),
+                    transparent 30%
+                ),
+                #F5F1E8;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            color: #C74E52;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(46px, 7vw, 78px);
+            line-height: 1;
+            font-weight: normal;
+            margin-bottom: 28px;
+        }
+
+        h1 span {
+            color: #C74E52;
+        }
+
+        .hero-description {
+            max-width: 620px;
+            font-size: 20px;
+            color: #4D566D;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 27px;
+            border-radius: 50px;
+            background: #1A2340;
+            color: white;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-outline {
+            background: transparent;
+            border: 1px solid #1A2340;
+            color: #1A2340;
+        }
+
+        /* ---------------- PHOTO ---------------- */
+
+        .photo-frame {
+            width: min(390px, 100%);
+            aspect-ratio: 4 / 5;
+            margin: 0 auto;
+
+            border-radius: 200px 200px 30px 30px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(212,175,55,.55),
+                    rgba(199,78,82,.45)
+                );
+
+            padding: 10px;
+
+            box-shadow:
+                20px 25px 60px rgba(26,35,64,.15);
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            border-radius: 190px 190px 22px 22px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            background: #1A2340;
+            color: white;
+            padding: 35px;
+        }
+
+        .photo-placeholder-inner {
+            border: 1px solid rgba(255,255,255,.4);
+            padding: 30px;
+            width: 100%;
+        }
+
+        .photo-name {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .photo-text {
+            font-size: 14px;
+            opacity: .8;
+        }
+
+        /* ---------------- GENERAL SECTIONS ---------------- */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-label {
+            color: #C74E52;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            font-size: clamp(38px, 5vw, 58px);
+            font-weight: normal;
+            line-height: 1.1;
+            margin-bottom: 22px;
+        }
+
+        .section-description {
+            max-width: 720px;
+            color: #596176;
+            font-size: 18px;
+        }
+
+        /* ---------------- ABOUT ---------------- */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 55px;
+        }
+
+        .about-card {
+            padding: 35px;
+            border-radius: 24px;
+            background: #F5F1E8;
+        }
+
+        .about-card h3 {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            color: #50586C;
+        }
+
+        /* ---------------- METHOD ---------------- */
+
+        .method {
+            background: #1A2340;
+            color: white;
+        }
+
+        .method .section-description {
+            color: #D6DAE4;
+        }
+
+        .codes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 55px;
+        }
+
+        .code-card {
+            padding: 30px 22px;
+            border-radius: 22px;
+            border: 1px solid rgba(255,255,255,.15);
+            background: rgba(255,255,255,.04);
+        }
+
+        .code-icon {
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        .code-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .code-card p {
+            color: #C9CEDA;
+            font-size: 14px;
+        }
+
+        /* ---------------- PROBLEMS ---------------- */
+
+        .problems {
+            background: #F5F1E8;
+        }
+
+        .problems-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 45px;
+        }
+
+        .problem {
+            padding: 23px 25px;
+            background: white;
+            border-radius: 0 18px 18px 0;
+            border-left: 4px solid #C74E52;
+        }
+
+        /* ---------------- QUOTE ---------------- */
+
+        .quote {
+            padding: 100px 0;
+            text-align: center;
+            background: #C74E52;
+            color: white;
+        }
+
+        .quote-text {
+            max-width: 850px;
+            margin: 0 auto;
+            font-family: Georgia, serif;
+            font-size: clamp(32px, 5vw, 52px);
+            line-height: 1.2;
+        }
+
+        .quote-author {
+            margin-top: 25px;
+            opacity: .85;
+        }
+
+        /* ---------------- CTA ---------------- */
+
+        .cta {
+            text-align: center;
+            background:
+                radial-gradient(
+                    circle at 50% 0,
+                    rgba(212,175,55,.25),
+                    transparent 35%
+                ),
+                #F5F1E8;
+        }
+
+        .cta .section-title {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-description {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #596176;
+            font-size: 18px;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+
+        footer {
+            padding: 35px 0;
+            background: #1A2340;
+            color: white;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #D4AF37;
+        }
+
+        /* ---------------- MOBILE ---------------- */
+
+        @media (max-width: 800px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                min-height: auto;
+                padding-top: 120px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .photo-frame {
+                max-width: 300px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .codes {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .problems-list {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .codes {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .hero-description {
+                font-size: 18px;
+            }
+
+            .button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container header-inner">
+
+        <div class="logo">
+            ЭЛЬМИРА
+        </div>
+
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#method">Метод</a>
+            <a href="#for-whom">Для кого</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <div>
+
+                <div class="eyebrow">
+                    Эксперт по управлению эмоциями
+                </div>
+
+                <h1>
+                    Вы не слишком
+                    <span>эмоциональны.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Возможно, вы просто давно не слышите себя.
+                    Я помогаю понять, что на самом деле стоит
+                    за вашими эмоциями и реакциями.
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#method" class="button">
+                        Узнать о методе
+                    </a>
+
+                    <a
+                        href="https://t.me/elmira_pro_ei"
+                        target="_blank"
+                        class="button button-outline"
+                    >
+                        Написать мне
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ЗДЕСЬ ПОЗЖЕ БУДЕТ ВАША ФОТОГРАФИЯ -->
+
+            <div class="photo-frame">
+
+                <div class="photo-placeholder">
+
+                    <div class="photo-placeholder-inner">
+
+                        <div class="photo-name">
+                            Эльмира
+                        </div>
+
+                        <div class="photo-text">
+                            Автор метода<br>
+                            «Код твоих потребностей»
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ОБО МНЕ -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="section-label">
+                Обо мне
+            </div>
+
+            <h2 class="section-title">
+                Помогаю услышать<br>
+                то, что стоит за эмоциями.
+            </h2>
+
+            <p class="section-description">
+                Я — Эльмира, эксперт по управлению эмоциями
+                и автор метода «Код твоих потребностей».
+            </p>
+
+
+            <div class="about-grid">
+
+                <div class="about-card">
+
+                    <h3>
+                        Что я делаю
+                    </h3>
+
+                    <p>
+                        Я помогаю женщинам понять, что на самом деле
+                        стоит за раздражением, обидой, тревогой,
+                        злостью и желанием всё контролировать.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        За эмоциональной реакцией может стоять
+                        потребность, которую мы давно не замечаем
+                        или не умеем выражать.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>
+                        Во что я верю
+                    </h3>
+
+                    <p>
+                        Мой подход — не подавлять эмоции и не учиться
+                        быть «удобной».
+                    </p>
+
+                    <br>
+
+                    <p>
+                        А научиться слышать себя, понимать свои реакции
+                        и по-другому взаимодействовать с близкими.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- МЕТОД -->
+
+    <section class="method" id="method">
+
+        <div class="container">
+
+            <div class="section-label">
+                Авторский метод
+            </div>
+
+            <h2 class="section-title">
+                «Код твоих потребностей»
+            </h2>
+
+            <p class="section-description">
+                Как услышать себя и понять других.
+                В основе метода — развитие эмоционального интеллекта
+                и понимание связи между потребностью и эмоциональной реакцией.
+            </p>
+
+
+            <div class="codes">
+
+                <div class="code-card">
+
+                    <div class="code-icon">
+                        🔵
+                    </div>
+
+                    <h3>
+                        Безопасность
+                    </h3>
+
+                    <p>
+                        Мне важно понимать,
+                        что происходит и на что я могу опереться.
+                    </p>
+
+                </div>
+
+
+                <div class="code-card">
+
+                    <div class="code-icon">
+                        🟢
+                    </div>
+
+                    <h3>
+                        Близость
+                    </h3>
+
+                    <p>
+                        Мне важно чувствовать связь,
+                        принятие и принадлежность.
+                    </p>
+
+                </div>
+
+
+                <div class="code-card">
+
+                    <div class="code-icon">
+                        🔴
+                    </div>
+
+                    <h3>
+                        Значимость
+                    </h3>
+
+                    <p>
+                        Мне важно чувствовать свою ценность,
+                        влияние и признание.
+                    </p>
+
+                </div>
+
+
+                <div class="code-card">
+
+                    <div class="code-icon">
+                        🟡
+                    </div>
+
+                    <h3>
+                        Свобода
+                    </h3>
+
+                    <p>
+                        Мне важно иметь выбор,
+                        движение и пространство для себя.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ДЛЯ КОГО -->
+
+    <section class="problems" id="for-whom">
+
+        <div class="container">
+
+            <div class="section-label">
+                Возможно, это про вас
+            </div>
+
+            <h2 class="section-title">
+                Если вы устали...
+            </h2>
+
+
+            <div class="problems-list">
+
+                <div class="problem">
+                    Постоянно раздражаться на близких.
+                </div>
+
+                <div class="problem">
+                    Чувствовать обиду, злость или внутреннее напряжение.
+                </div>
+
+                <div class="problem">
+                    Контролировать всё, потому что иначе становится тревожно.
+                </div>
+
+                <div class="problem">
+                    Сравнивать себя с другими женщинами.
+                </div>
+
+                <div class="problem">
+                    Объяснять свои чувства, но всё равно не быть услышанной.
+                </div>
+
+                <div class="problem">
+                    Понимать других, но не понимать, чего хотите вы сами.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ЦИТАТА -->
+
+    <section class="quote">
+
+        <div class="container">
+
+            <div class="quote-text">
+                «Не нужно бороться
+                со своими эмоциями.
+                Сначала стоит понять,
+                о чём они говорят».
+            </div>
+
+            <div class="quote-author">
+                Эльмира · «Код твоих потребностей»
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta" id="contact">
+
+        <div class="container">
+
+            <div class="section-label">
+                Начните с себя
+            </div>
+
+            <h2 class="section-title">
+                Переведите эмоции
+                с языка реакции
+                на язык потребностей.
+            </h2>
+
+            <p class="cta-description">
+                Понимание своего Кода помогает увидеть,
+                что стоит за вашей реакцией,
+                и начать по-другому взаимодействовать
+                с собой и близкими.
+            </p>
+
+            <a
+                href="https://t.me/elmira_pro_ei"
+                target="_blank"
+                class="button"
+            >
+                Перейти в Telegram
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+            © 2026 Эльмира
+        </div>
+
+        <div class="footer-links">
+
+            <a
+                href="https://t.me/elmira_pro_ei"
+                target="_blank"
+            >
+                Telegram
+            </a>
+
+            <a
+                href="https://instagram.com/elmira_tvoi_kod"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+  </html>
