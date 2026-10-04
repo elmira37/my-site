@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Эльмира — эксперт по эмоциям и потребностям | «Код твоих потребностей»</title>
+
+    <meta
+        name="description"
+        content="Эльмира — эксперт по эмоциям и потребностям, автор системы «Код твоих потребностей». Бесплатные тесты по отношениям, детям, себе и работе."
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Эльмира — эксперт по эмоциям и потребностям">
+    <meta
+        property="og:description"
+        content="Узнайте свой Код в отношениях, с детьми, в работе и в отношении себя."
+    >
+
+    <meta name="theme-color" content="#1A1A2E">
+
+    <style>
+
+        /* =========================
+           ПЕРЕМЕННЫЕ
+        ========================= */
+
+        :root {
+            --indigo: #1A1A2E;
+            --violet: #7B5EA7;
+            --aqua: #4FC3C7;
+            --lavender: #C8B6E2;
+            --rose: #E8A0B0;
+            --light: #F7F5FA;
+            --graphite: #2D2D3A;
+            --muted: #696979;
+            --white: #FFFFFF;
+            --border: #E7E2ED;
+        }
+
+
+        /* =========================
+           БАЗА
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--graphite);
+            background: var(--light);
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            padding: 24px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--indigo);
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        nav a {
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+            color: var(--violet);
+        }
+
+
+        /* =========================
+           КНОПКИ
+        ========================= */
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 14px 25px;
+            border-radius: 50px;
+
+            background: var(--indigo);
+            color: white;
+
+            font-weight: bold;
+
+            border: 1px solid var(--indigo);
+
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(26, 26, 46, 0.15);
+        }
+
+        .button-aqua {
+            background: var(--aqua);
+            border-color: var(--aqua);
+            color: var(--indigo);
+        }
+
+        .button-outline {
+            background: transparent;
+            color: var(--indigo);
+        }
+
+        .button-outline:hover {
+            background: var(--indigo);
+            color: white;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 760px;
+            padding: 130px 0 80px;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 85% 15%,
+                    rgba(79, 195, 199, 0.22),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 15% 80%,
+                    rgba(200, 182, 226, 0.35),
+                    transparent 30%
+                ),
+                var(--light);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .eyebrow,
+        .section-label {
+            color: var(--violet);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, serif;
+            color: var(--indigo);
+        }
+
+        h1 {
+            font-size: clamp(50px, 7vw, 80px);
+            line-height: 0.98;
+            font-weight: normal;
+            margin-bottom: 28px;
+        }
+
+        h1 span {
+            color: var(--violet);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            font-size: 20px;
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .hero-note {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           ФОТО
+        ========================= */
+
+        .photo-frame {
+            width: min(410px, 100%);
+            aspect-ratio: 4 / 5;
+            margin: 0 auto;
+
+            padding: 10px;
+
+            border-radius: 210px 210px 35px 35px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    var(--lavender),
+                    var(--aqua)
+                );
+
+            box-shadow:
+                20px 25px 60px rgba(26, 26, 46, 0.13);
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+
+            border-radius: 200px 200px 27px 27px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            background: var(--indigo);
+            color: white;
+
+            padding: 35px;
+        }
+
+        .photo-inner {
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            padding: 35px;
+            width: 100%;
+        }
+
+        .photo-name {
+            font-family: Georgia, serif;
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .photo-text {
+            font-size: 14px;
+            color: #ddd9e8;
+        }
+
+
+        /* =========================
+           ОБЩИЕ СЕКЦИИ
+        ========================= */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 5vw, 64px);
+            line-height: 1.05;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            max-width: 760px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           ТЕСТЫ
+        ========================= */
+
+        .tests {
+            background: white;
+        }
+
+        .tests-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 50px;
+        }
+
+        .test-card {
+            padding: 30px 24px;
+
+            border: 1px solid var(--border);
+            border-radius: 25px;
+
+            background: var(--light);
+
+            transition: 0.3s;
+        }
+
+        .test-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(26, 26, 46, 0.08);
+        }
+
+        .test-icon {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .test-card h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .test-card p {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 22px;
+        }
+
+        .test-button {
+            display: inline-block;
+
+            padding: 10px 16px;
+
+            border-radius: 30px;
+
+            background: var(--indigo);
+            color: white;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .test-button:hover {
+            background: var(--violet);
+        }
+
+        .test-result {
+            margin-top: 35px;
+            padding: 25px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(200, 182, 226, 0.25),
+                    rgba(79, 195, 199, 0.18)
+                );
+
+            color: var(--indigo);
+        }
+
+        .test-result strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           ОБО МНЕ
+        ========================= */
+
+        .about {
+            background: var(--light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .about-card {
+            padding: 35px;
+            border-radius: 25px;
+            background: white;
+        }
+
+        .about-card h3 {
+            font-size: 31px;
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            color: var(--muted);
+        }
+
+
+        /* =========================
+           ПРОБЛЕМЫ
+        ========================= */
+
+        .problems {
+            background: white;
+        }
+
+        .problems-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 45px;
+        }
+
+        .problem {
+            padding: 23px 25px;
+
+            border-left: 4px solid var(--violet);
+
+            background: var(--light);
+
+            border-radius: 0 18px 18px 0;
+        }
+
+        .problem strong {
+            color: var(--indigo);
+        }
+
+
+        /* =========================
+           МЕТОД
+        ========================= */
+
+        .method {
+            background: var(--indigo);
+            color: white;
+        }
+
+        .method h2 {
+            color: white;
+        }
+
+        .method .section-label {
+            color: var(--aqua);
+        }
+
+        .method .section-description {
+            color: #d9d7e3;
+        }
+
+        .codes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 50px;
+        }
+
+        .code-card {
+            padding: 30px 22px;
+
+            border: 1px solid rgba(255, 255, 255, 0.13);
+
+            border-radius: 22px;
+
+            background: rgba(255, 255, 255, 0.045);
+        }
+
+        .code-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .code-card h3 {
+            font-family: Arial, sans-serif;
+            color: white;
+            font-size: 19px;
+            margin-bottom: 9px;
+        }
+
+        .code-card p {
+            font-size: 14px;
+            color: #c9c6d4;
+        }
+
+        .method-note {
+            margin-top: 30px;
+            max-width: 800px;
+            color: #ddd9e8;
+        }
+
+
+        /* =========================
+           КАК РАБОТАЕТ
+        ========================= */
+
+        .how {
+            background: var(--light);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .step {
+            padding: 32px;
+
+            border-top: 3px solid var(--aqua);
+
+            background: white;
+
+            border-radius: 0 0 22px 22px;
+        }
+
+        .step-number {
+            font-family: Georgia, serif;
+            font-size: 48px;
+            color: var(--violet);
+            line-height: 1;
+        }
+
+        .step h3 {
+            font-size: 29px;
+            margin: 12px 0;
+        }
+
+        .step p {
+            color: var(--muted);
+        }
+
+
+        /* =========================
+           ЦИТАТА
+        ========================= */
+
+        .quote {
+            padding: 100px 0;
+
+            text-align: center;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--violet),
+                    var(--indigo)
+                );
+        }
+
+        .quote-text {
+            max-width: 850px;
+            margin: auto;
+
+            font-family: Georgia, serif;
+
+            font-size: clamp(35px, 5vw, 56px);
+
+            line-height: 1.15;
+        }
+
+        .quote-author {
+            margin-top: 22px;
+            color: #e9e4f1;
+        }
+
+
+        /* =========================
+           ЧТО ВЫ ЗАМЕТИТЕ
+        ========================= */
+
+        .expert {
+            background: white;
+        }
+
+        .expert-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .expert-box {
+            padding: 42px;
+
+            border-radius: 28px;
+
+            background: var(--indigo);
+
+            color: white;
+        }
+
+        .expert-box strong {
+            display: block;
+
+            font-family: Georgia, serif;
+
+            font-size: 34px;
+
+            line-height: 1.1;
+
+            margin-bottom: 18px;
+        }
+
+        .expert-list {
+            list-style: none;
+        }
+
+        .expert-list li {
+            padding: 13px 0;
+
+            border-bottom: 1px solid var(--border);
+
+            color: var(--muted);
+        }
+
+        .expert-list li::before {
+            content: "✓";
+
+            color: var(--aqua);
+
+            font-weight: bold;
+
+            margin-right: 10px;
+        }
+
+
+        /* =========================
+           КОНСУЛЬТАЦИЯ
+        ========================= */
+
+        .consult {
+            background: var(--light);
+        }
+
+        .consult-box {
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 55px;
+
+            border-radius: 30px;
+
+            background: white;
+
+            border: 1px solid var(--border);
+        }
+
+        .consult-list {
+            list-style: none;
+
+            margin: 25px 0;
+        }
+
+        .consult-list li {
+            padding: 8px 0;
+
+            color: var(--muted);
+        }
+
+        .consult-list li::before {
+            content: "— ";
+
+            color: var(--violet);
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           ОТЗЫВЫ
+        ========================= */
+
+        .reviews {
+            background: white;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+
+            margin-top: 50px;
+        }
+
+        .review {
+            padding: 30px;
+
+            border-radius: 22px;
+
+            background: var(--light);
+
+            border: 1px solid var(--border);
+        }
+
+        .review h3 {
+            font-size: 27px;
+
+            margin-bottom: 10px;
+        }
+
+        .review-name {
+            font-size: 13px;
+
+            font-weight: bold;
+
+            color: var(--violet);
+
+            margin-bottom: 15px;
+        }
+
+        .review p {
+            font-size: 14px;
+
+            color: var(--muted);
+        }
+
+
+        /* =========================
+           КЛУБ
+        ========================= */
+
+        .club {
+            background: var(--indigo);
+
+            color: white;
+        }
+
+        .club h2 {
+            color: white;
+        }
+
+        .club .section-label {
+            color: var(--aqua);
+        }
+
+        .club .section-description {
+            color: #d9d7e3;
+        }
+
+        .club-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 25px;
+
+            margin-top: 45px;
+        }
+
+        .club-card {
+            padding: 30px;
+
+            border: 1px solid rgba(255, 255, 255, 0.14);
+
+            border-radius: 24px;
+
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .club-card h3 {
+            font-family: Arial, sans-serif;
+
+            color: white;
+
+            font-size: 20px;
+
+            margin-bottom: 12px;
+        }
+
+        .club-card p {
+            color: #c9c6d4;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           ФИНАЛЬНЫЙ CTA
+        ========================= */
+
+        .cta {
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at 50% 0,
+                    rgba(79, 195, 199, 0.25),
+                    transparent 35%
+                ),
+                var(--light);
+        }
+
+        .cta .section-title {
+            max-width: 800px;
+
+            margin: 0 auto 20px;
+        }
+
+        .cta-description {
+            max-width: 700px;
+
+            margin: 0 auto 30px;
+
+            color: var(--muted);
+
+            font-size: 18px;
+        }
+
+        .cta-buttons {
+            justify-content: center;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 35px 0;
+
+            background: var(--indigo);
+
+            color: white;
+        }
+
+        .footer-inner {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: var(--aqua);
+        }
+
+        .footer-note {
+            margin-top: 8px;
+
+            font-size: 12px;
+
+            color: #aaa8b7;
+        }
+
+
+        /* =========================
+           МОБИЛЬНАЯ ВЕРСИЯ
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            .hero-grid,
+            .expert-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .photo-frame {
+                max-width: 340px;
+            }
+
+            .tests-grid,
+            .codes {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 800px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 120px;
+
+                min-height: auto;
+            }
+
+            .about-grid,
+            .problems-list,
+            .steps,
+            .reviews-grid,
+            .club-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+
+                text-align: center;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .tests-grid,
+            .codes {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 49px;
+            }
+
+            .hero-description {
+                font-size: 18px;
+            }
+
+            .button {
+                width: 100%;
+
+                text-align: center;
+            }
+
+            .consult-box {
+                padding: 30px 22px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="container header-inner">
+
+        <a href="#top" class="logo">
+            ЭЛЬМИРА
+        </a>
+
+        <nav aria-label="Основная навигация">
+
+            <a href="#tests">
+                Тесты
+            </a>
+
+            <a href="#about">
+                Обо мне
+            </a>
+
+            <a href="#method">
+                Метод
+            </a>
+
+            <a href="#consult">
+                Консультация
+            </a>
+
+            <a href="#club">
+                Клуб
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main id="top">
+
+
+<!-- =========================
+     1. HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Эксперт по эмоциям и потребностям
+            </div>
+
+            <h1>
+                Поймите, что стоит за
+                <span>вашими эмоциями.</span>
+            </h1>
+
+            <p class="hero-description">
+
+                Я помогаю понять, что стоит за эмоциональными реакциями,
+                какие потребности вы пытаетесь ими защитить и почему
+                одни и те же конфликты повторяются.
+
+            </p>
+
+
+            <div class="buttons">
+
+                <a
+                    href="#tests"
+                    class="button button-aqua"
+                >
+                    🧪 Пройти тесты
+                </a>
+
+                <a
+                    href="https://t.me/ElmiraPRO_EI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-outline"
+                >
+                    💬 Написать в Telegram
+                </a>
+
+            </div>
+
+
+            <p class="hero-note">
+                Автор системы «Код твоих потребностей»
+            </p>
+
+        </div>
+
+
+        <!-- ФОТО -->
+
+        <div class="photo-frame">
+
+            <div class="photo-placeholder">
+
+                <div class="photo-inner">
+
+                    <div class="photo-name">
+                        Эльмира
+                    </div>
+
+                    <div class="photo-text">
+
+                        Эксперт по эмоциям и потребностям
+                        <br><br>
+
+                        Автор системы
+                        <br>
+
+                        «Код твоих потребностей»
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     2. ТЕСТЫ
+========================= -->
+
+<section class="tests" id="tests">
+
+    <div class="container">
+
+        <div class="section-label">
+            Бесплатные тесты
+        </div>
+
+        <h2 class="section-title">
+
+            Узнайте свой Код
+            <br>
+            в каждой сфере
+
+        </h2>
+
+
+        <p class="section-description">
+
+            Мы проявляемся по-разному в разных ролях.
+            В отношениях — одна, с детьми — другая,
+            на работе — третья, наедине с собой — четвёртая.
+
+            <br><br>
+
+            Выберите сферу, которая болит сейчас сильнее всего,
+            и пройдите короткий тест.
+
+        </p>
+
+
+        <div class="tests-grid">
+
+
+            <!-- ОТНОШЕНИЯ -->
+
+            <div class="test-card">
+
+                <div class="test-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Отношения
+                </h3>
+
+                <p>
+
+                    Почему вы цепляетесь или отдаляетесь?
+                    Почему одни и те же ссоры повторяются?
+
+                </p>
+
+                <a
+                    href="https://t.me/ElmiraPRO_EI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="test-button"
+                >
+                    Пройти тест
+                </a>
+
+            </div>
+
+
+            <!-- ДЕТИ -->
+
+            <div class="test-card">
+
+                <div class="test-icon">
+                    👶
+                </div>
+
+                <h3>
+                    Дети
+                </h3>
+
+                <p>
+
+                    Почему вы срываетесь на самом любимом
+                    человеке, а потом вините себя?
+
+                </p>
+
+                <a
+                    href="https://t.me/ElmiraPRO_EI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="test-button"
+                >
+                    Пройти тест
+                </a>
+
+            </div>
+
+
+            <!-- Я САМА -->
+
+            <div class="test-card">
+
+                <div class="test-icon">
+                    🌸
+                </div>
+
+                <h3>
+                    Я сама
+                </h3>
+
+                <p>
+
+                    Почему внутри постоянное напряжение
+                    и трудно ответить:
+                    «А чего хочу я?»
+
+                </p>
+
+                <a
+                    href="https://t.me/ElmiraPRO_EI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="test-button"
+                >
+                    Пройти тест
+                </a>
+
+            </div>
+
+
+            <!-- РАБОТА -->
+
+            <div class="test-card">
+
+                <div class="test-icon">
+                    💼
+                </div>
+
+                <h3>
+                    Работа
+                </h3>
+
+                <p>
+
+                    Почему вы выгораете, всё контролируете
+                    или не можете расслабиться?
+
+                </p>
+
+                <a
+                    href="https://t.me/ElmiraPRO_EI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="test-button"
+                >
+                    Пройти тест
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="test-result">
+
+            <strong>
+                Что вы получите после теста:
+            </strong>
+
+            ① Как вы реагируете:
+            контроль, прилипание, давление или побег.
+
+            <br>
+
+            ② Какая потребность сейчас особенно важна:
+            безопасность, близость, значимость или свобода.
+
+            <br>
+
+            ③ Ваш Код потребностей в выбранной сфере.
+
+            <br>
+
+            ④ Почему вы реагируете именно так.
+
+            <br>
+
+            ⑤ Что можно изменить.
+
+            <br><br>
+
+            Это бесплатно.
+            Можно пройти одну сферу или все четыре.
+
+            <br>
+
+            После прохождения теста нажмите
+            «Получить результат в Telegram» —
+            и получите расшифровку вашего Кода.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     3. ОБО МНЕ
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-label">
+            Обо мне
+        </div>
+
+        <h2 class="section-title">
+
+            Помогаю понять,
+            <br>
+            что стоит за эмоциями.
+
+        </h2>
+
+
+        <p class="section-description">
+
+            Меня зовут Эльмира.
+
+            Уже 6 лет я изучаю эмоции и поведение людей.
+
+            Я эксперт по эмоциям и потребностям,
+            преподаватель по развитию эмоционального интеллекта
+            и автор системы «Код твоих потребностей».
+
+        </p>
+
+
+        <div class="about-grid">
+
+
+            <div class="about-card">
+
+                <h3>
+                    Как появилась система
+                </h3>
+
+                <p>
+
+                    Начинала с занятий для детей —
+                    учила их понимать свои чувства.
+
+                    Но быстро поняла:
+                    работать нужно в первую очередь с мамами.
+
+                    Потому что ребёнку легче чувствовать себя спокойно
+                    рядом с мамой, которая понимает себя.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    Постепенно я собрала систему
+                    «Код твоих потребностей».
+
+                    Сначала она помогала мне понимать
+                    собственные реакции, потом —
+                    лучше понимать близких.
+
+                    Сегодня система помогает женщинам
+                    разбираться с раздражением, обидами
+                    и повторяющимися конфликтами.
+
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <h3>
+                    Мой подход
+                </h3>
+
+                <p>
+
+                    Я не учу быть удобной
+                    и не предлагаю «избавиться» от эмоций.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    Задача — замечать свои реакции,
+                    понимать, какую потребность они защищают,
+                    и выбирать действие осознанно.
+
+                </p>
+
+                <br>
+
+                <a
+                    href="#tests"
+                    class="button"
+                >
+                    Пройти тесты и узнать свой Код
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     4. ВОЗМОЖНО, ЭТО ПРО ВАС
+========================= -->
+
+<section class="problems">
+
+    <div class="container">
+
+        <div class="section-label">
+            Возможно, это про вас
+        </div>
+
+        <h2 class="section-title">
+
+            Почему вы постоянно раздражаетесь,
+            <br>
+            злитесь или всё контролируете?
+
+        </h2>
+
+
+        <p class="section-description">
+
+            За эмоциональной реакцией
+            не всегда находится то,
+            что кажется очевидным.
+
+        </p>
+
+
+        <div class="problems-list">
+
+
+            <div class="problem">
+
+                <strong>
+                    Вы постоянно раздражаетесь на близких.
+                </strong>
+
+                <br>
+
+                Даже когда понимаете,
+                что не хотите срываться.
+
+            </div>
+
+
+            <div class="problem">
+
+                <strong>
+                    Вас легко вывести из себя.
+                </strong>
+
+                <br>
+
+                Раздражение быстро превращается
+                в злость или конфликт.
+
+            </div>
+
+
+            <div class="problem">
+
+                <strong>
+                    Вы пытаетесь всё контролировать.
+                </strong>
+
+                <br>
+
+                Потому что неопределённость
+                вызывает напряжение.
+
+            </div>
+
+
+            <div class="problem">
+
+                <strong>
+                    Вы часто чувствуете обиду.
+                </strong>
+
+                <br>
+
+                Особенно когда вас
+                не слышат или не замечают.
+
+            </div>
+
+
+            <div class="problem">
+
+                <strong>
+                    Вы сравниваете себя с другими.
+                </strong>
+
+                <br>
+
+                И чувствуете,
+                будто вам чего-то не хватает.
+
+            </div>
+
+
+            <div class="problem">
+
+                <strong>
+                    Вы хорошо понимаете других,
+                    но не себя.
+                </strong>
+
+                <br>
+
+                Трудно ответить на вопрос:
+                «А чего хочу я?»
+
+            </div>
+
+        </div>
+
+
+        <div style="text-align:center;margin-top:35px">
+
+            <a
+                href="#tests"
+                class="button button-aqua"
+            >
+                Пройти тесты
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     5. МЕТОД
+========================= -->
+
+<section class="method" id="method">
+
+    <div class="container">
+
+        <div class="section-label">
+            Авторская система
+        </div>
+
+        <h2 class="section-title">
+            «Код твоих потребностей»
+        </h2>
+
+
+        <p class="section-description">
+
+            Система помогает увидеть связь между потребностями,
+            эмоциональными состояниями и привычными реакциями.
+
+        </p>
+
+
+        <div class="codes">
+
+
+            <div class="code-card">
+
+                <div class="code-icon">
+                    🔵
+                </div>
+
+                <h3>
+                    Безопасность
+                </h3>
+
+                <p>
+
+                    Мне важно понимать,
+                    что происходит,
+                    иметь определённость
+                    и чувствовать опору.
+
+                </p>
+
+            </div>
+
+
+            <div class="code-card">
+
+                <div class="code-icon">
+                    🟢
+                </div>
+
+                <h3>
+                    Близость
+                </h3>
+
+                <p>
+
+                    Мне важно чувствовать связь,
+                    принятие, принадлежность
+                    и эмоциональный контакт.
+
+                </p>
+
+            </div>
+
+
+            <div class="code-card">
+
+                <div class="code-icon">
+                    🔴
+                </div>
+
+                <h3>
+                    Значимость
+                </h3>
+
+                <p>
+
+                    Мне важно чувствовать
+                    свою ценность,
+                    признание, влияние
+                    и уважение.
+
+                </p>
+
+            </div>
+
+
+            <div class="code-card">
+
+                <div class="code-icon">
+                    🟡
+                </div>
+
+                <h3>
+                    Свобода
+                </h3>
+
+                <p>
+
+                    Мне важно иметь выбор,
+                    движение, пространство
+                    и возможность быть собой.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="method-note">
+
+            У каждой женщины — свой набор.
+            И в каждой сфере жизни он может проявляться по-разному.
+
+            Тесты покажут,
+            какие Коды ведут именно вас.
+
+        </p>
+
+
+        <br>
+
+        <a
+            href="#tests"
+            class="button button-aqua"
+        >
+            Узнать свой Код
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     6. КАК ЭТО РАБОТАЕТ
+========================= -->
+
+<section class="how">
+
+    <div class="container">
+
+        <div class="section-label">
+            Как это работает
+        </div>
+
+        <h2 class="section-title">
+            От эмоции — к пониманию себя.
+        </h2>
+
+
+        <p class="section-description">
+
+            Эмоциональный интеллект начинается
+            не с запрета чувствовать,
+            а с умения замечать и понимать свою реакцию.
+
+        </p>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Замечаем реакцию
+                </h3>
+
+                <p>
+
+                    Что произошло?
+                    Что вы почувствовали?
+                    Как отреагировали?
+
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Ищем потребность
+                </h3>
+
+                <p>
+
+                    Что для вас оказалось
+                    важным в этой ситуации?
+
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Выбираем действие
+                </h3>
+
+                <p>
+
+                    Как можно выразить
+                    свою потребность
+                    без привычной реакции?
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     7. ЦИТАТА
+========================= -->
+
+<section class="quote">
+
+    <div class="container">
+
+        <div class="quote-text">
+
+            «Не нужно бороться
+            со своими эмоциями.
+            Сначала стоит понять,
+            о чём они говорят».
+
+        </div>
+
+        <div class="quote-author">
+
+            — Эльмира,
+            «Код твоих потребностей»
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     8. ЧТО ВЫ СМОЖЕТЕ ЗАМЕЧАТЬ
+========================= -->
+
+<section class="expert">
+
+    <div class="container expert-grid">
+
+
+        <div class="expert-box">
+
+            <strong>
+                Эмоции —
+                это информация о вас.
+            </strong>
+
+            <p>
+
+                Когда вы понимаете,
+                что стоит за собственной реакцией,
+                появляется возможность выбирать,
+                как действовать дальше.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="section-label">
+                Что вы сможете замечать
+            </div>
+
+            <h2 class="section-title">
+
+                Вместо
+                «со мной что-то не так»
+
+            </h2>
+
+
+            <ul class="expert-list">
+
+                <li>
+                    Что именно запускает ваше раздражение.
+                </li>
+
+                <li>
+                    Почему вам хочется контролировать ситуацию.
+                </li>
+
+                <li>
+                    Что стоит за обидой или злостью.
+                </li>
+
+                <li>
+                    Почему поведение другого человека
+                    так сильно вас задевает.
+                </li>
+
+                <li>
+                    Какая потребность сейчас
+                    для вас особенно важна.
+                </li>
+
+                <li>
+                    Почему в разных сферах жизни
+                    вы реагируете по-разному.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     9. КОНСУЛЬТАЦИЯ
+========================= -->
+
+<section class="consult" id="consult">
+
+    <div class="container">
+
+        <div class="consult-box">
+
+            <div class="section-label">
+                Личный разбор
+            </div>
+
+            <h2 class="section-title">
+                Личный разбор с Эльмирой
+            </h2>
+
+
+            <p class="section-description">
+
+                60–90 минут в Zoom.
+
+                Разбираем вашу ситуацию,
+                определяем ваш Код и смотрим,
+                какая потребность стоит
+                за повторяющимися реакциями.
+
+            </p>
+
+
+            <ul class="consult-list">
+
+                <li>
+                    Разбор вашего Кода потребностей.
+                </li>
+
+                <li>
+                    Разбор конкретной ситуации,
+                    которая повторяется.
+                </li>
+
+                <li>
+                    Понимание, как выражать потребность
+                    без срыва и обиды.
+                </li>
+
+                <li>
+                    План действий на ближайшие недели.
+                </li>
+
+            </ul>
+
+
+            <p style="color:var(--muted);margin-bottom:25px">
+
+                Вы уйдёте с ясностью —
+                даже если ничего больше не купите.
+
+            </p>
+
+
+            <a
+                href="https://t.me/ElmiraPRO_EI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                Хочу консультацию
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     10. ОТЗЫВЫ
+========================= -->
+
+<section class="reviews">
+
+    <div class="container">
+
+        <div class="section-label">
+            Отзывы
+        </div>
+
+        <h2 class="section-title">
+
+            Что говорят женщины
+            <br>
+            после работы с методом
+
+        </h2>
+
+
+        <div class="reviews-grid">
+
+
+            <div class="review">
+
+                <h3>
+                    «Я перестала ругать себя за эмоции»
+                </h3>
+
+                <div class="review-name">
+                    Лейсан
+                </div>
+
+                <p>
+
+                    «Я была потеряна в своих эмоциях,
+                    неправильно реагировала на вещи,
+                    ругала себя за любое проявление чувств.
+
+                    Сейчас я принимаю себя такой,
+                    какая я есть.
+
+                    Мне стало легче жить,
+                    я стала терпеливее
+                    и меньше нервничаю».
+
+                </p>
+
+            </div>
+
+
+            <div class="review">
+
+                <h3>
+                    «Методику можно применять с детьми»
+                </h3>
+
+                <div class="review-name">
+                    Альбина Хуснутдинова
+                </div>
+
+                <p>
+
+                    «Благодаря методике я поняла
+                    суть своего состояния
+                    и осознала свою эмоциональную потребность.
+
+                    Очень понравилось,
+                    что эту методику можно применять
+                    в отношениях с детьми».
+
+                </p>
+
+            </div>
+
+
+            <div class="review">
+
+                <h3>
+                    «Помогает лучше понимать людей»
+                </h3>
+
+                <div class="review-name">
+                    Альбина
+                </div>
+
+                <p>
+
+                    «Я для себя отметила,
+                    как можно общаться с другими людьми,
+                    как они мыслят, что чувствуют,
+                    их поведение и какую стратегию выбирают.
+
+                    Эта информация была очень полезна».
+
+                </p>
+
+            </div>
+
+
+            <div class="review">
+
+                <h3>
+                    «Когда понимаешь себя — принимаешь себя»
+                </h3>
+
+                <div class="review-name">
+                    Елена Курбангалеева
+                </div>
+
+                <p>
+
+                    «Сегодня было очень интересно,
+                    вдохновляюще и ресурсно!
+
+                    Когда ты понимаешь сам себя,
+                    знаешь сам себя —
+                    ты принимаешь себя».
+
+                </p>
+
+            </div>
+
+
+            <div class="review">
+
+                <h3>
+                    «Я просто ломала себя»
+                </h3>
+
+                <div class="review-name">
+                    Участница клуба
+                </div>
+
+                <p>
+
+                    «После твоего разбора я поняла,
+                    что я просто ломала себя,
+                    ушла по другой дороге.
+
+                    Сейчас я замечаю изменения
+                    в отношениях с людьми
+                    и в своей жизни».
+
+                </p>
+
+            </div>
+
+
+            <div class="review">
+
+                <h3>
+                    «Очень актуально и понятно»
+                </h3>
+
+                <div class="review-name">
+                    Отзыв из чата
+                </div>
+
+                <p>
+
+                    «Очень понятно,
+                    очень приближенно к обывательским проблемам.
+
+                    Помогает общению с людьми
+                    и, конечно, помогает
+                    себя лучше понимать».
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     11. КЛУБ
+========================= -->
+
+<section class="club" id="club">
+
+    <div class="container">
+
+        <div class="section-label">
+            Для тех, кто хочет глубже
+        </div>
+
+        <h2 class="section-title">
+            Клуб «Код твоих потребностей»
+        </h2>
+
+
+        <p class="section-description">
+
+            Пространство для женщин,
+            которые хотят не просто узнать свой Код,
+            а применять его в жизни каждый день.
+
+        </p>
+
+
+        <div class="club-grid">
+
+
+            <div class="club-card">
+
+                <h3>
+                    🤖 ИИ-помощник 24/7
+                </h3>
+
+                <p>
+
+                    Отвечает на ваши вопросы
+                    по системе «Код твоих потребностей».
+
+                </p>
+
+            </div>
+
+
+            <div class="club-card">
+
+                <h3>
+                    📅 Еженедельный live-разбор
+                </h3>
+
+                <p>
+
+                    Разбираем реальные ситуации
+                    участниц вместе с Эльмирой.
+
+                </p>
+
+            </div>
+
+
+            <div class="club-card">
+
+                <h3>
+                    📚 Библиотека практик
+                </h3>
+
+                <p>
+
+                    Новые упражнения
+                    и материалы каждый месяц.
+
+                </p>
+
+            </div>
+
+
+            <div class="club-card">
+
+                <h3>
+                    💬 Закрытый чат
+                </h3>
+
+                <p>
+
+                    Общение и поддержка женщин,
+                    которые проходят тот же путь.
+
+                </p>
+
+            </div>
+
+
+            <div class="club-card">
+
+                <h3>
+                    🎯 Код недели
+                </h3>
+
+                <p>
+
+                    Каждую неделю разбираем
+                    один Код и его проявления.
+
+                </p>
+
+            </div>
+
+
+            <div class="club-card">
+
+                <h3>
+                    📼 Архив разборов
+                </h3>
+
+                <p>
+
+                    Записи прошлых встреч
+                    остаются внутри клуба.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+        <a
+            href="https://t.me/ElmiraPRO_EI"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button-aqua"
+        >
+            Узнать подробнее в Telegram
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     12. ФИНАЛ
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="section-label">
+            Начните с себя
+        </div>
+
+
+        <h2 class="section-title">
+
+            Переведите эмоции
+            с языка реакции
+            на язык потребностей.
+
+        </h2>
+
+
+        <p class="cta-description">
+
+            Начните с бесплатного теста прямо на сайте —
+            узнайте свой Код в той сфере,
+            которая важна сейчас.
+
+        </p>
+
+
+        <div class="buttons cta-buttons">
+
+
+            <a
+                href="#tests"
+                class="button button-aqua"
+            >
+                🧪 Пройти тесты
+            </a>
+
+
+            <a
+                href="https://t.me/ElmiraPRO_EI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                💬 Записаться на консультацию
+            </a>
+
+
+            <a
+                href="#club"
+                class="button button-outline"
+            >
+                🎓 Узнать о клубе
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+
+        <div>
+
+            <div>
+                © 2026 Эльмира
+            </div>
+
+            <div class="footer-note">
+
+                Эксперт по эмоциям и потребностям
+                · Автор системы «Код твоих потребностей»
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a
+                href="https://t.me/ElmiraPRO_EI"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Telegram
+            </a>
+
+
+            <a
+                href="https://instagram.com/elmira_tvoi_kod"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+  </html>
