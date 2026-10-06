@@ -3,21 +3,28 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Эльмира И. — эксперт по эмоциям и потребностям | Код твоих потребностей</title>
+  <title>
+    Эльмира И. — эксперт по эмоциям и потребностям | Код твоих потребностей
+  </title>
 
   <meta
     name="description"
-    content="Эльмира И. — эксперт по эмоциям и потребностям, автор системы «Код твоих потребностей». Помогаю понять, что стоит за эмоциональными реакциями, почему повторяются конфликты и как изменить привычный способ реагирования."
+    content="Эльмира И. — эксперт по эмоциям и потребностям, автор системы «Код твоих потребностей». Узнайте, что стоит за вашими эмоциональными реакциями и почему повторяются одни и те же конфликты."
   >
 
   <meta name="author" content="Эльмира И.">
-  <meta name="theme-color" content="#1A2340">
+
+  <meta
+    name="theme-color"
+    content="#1A2340"
+  >
 
   <meta
     property="og:title"
-    content="Эльмира И. — эмоции, потребности и «Код твоих потребностей»"
+    content="Эльмира И. — Код твоих потребностей"
   >
 
   <meta
@@ -25,7 +32,10 @@
     content="Поймите, что стоит за эмоциональными реакциями, какую потребность вы пытаетесь защитить и почему повторяются одни и те же конфликты."
   >
 
-  <meta property="og:locale" content="ru_RU">
+  <meta
+    property="og:locale"
+    content="ru_RU"
+  >
 
   <meta
     name="twitter:card"
@@ -34,7 +44,7 @@
 
   <meta
     name="twitter:title"
-    content="Эльмира И. — эмоции, потребности и «Код твоих потребностей»"
+    content="Эльмира И. — Код твоих потребностей"
   >
 
   <meta
@@ -42,7 +52,6 @@
     content="Поймите свои эмоциональные реакции, потребности и причины повторяющихся конфликтов."
   >
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,7 +63,9 @@
   }
   </script>
 
+
   <style>
+
     :root {
       --navy: #1A2340;
       --gold: #D4AF37;
@@ -67,15 +78,18 @@
       --light: #F8F6F1;
     }
 
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
+
 
     body {
       font-family: Arial, sans-serif;
@@ -84,20 +98,24 @@
       line-height: 1.6;
     }
 
+
     a {
       color: inherit;
       text-decoration: none;
     }
+
 
     img {
       max-width: 100%;
       display: block;
     }
 
+
     .container {
       width: min(1120px, calc(100% - 40px));
       margin: 0 auto;
     }
+
 
     /* =========================
        HEADER
@@ -107,47 +125,66 @@
       position: sticky;
       top: 0;
       z-index: 100;
+
       background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid rgba(26,35,64,0.08);
+
+      border-bottom:
+        1px solid rgba(26,35,64,0.08);
+
       backdrop-filter: blur(10px);
     }
 
+
     .header-inner {
       min-height: 76px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 25px;
     }
+
 
     .logo {
       font-family: Georgia, serif;
       font-size: 22px;
+
       letter-spacing: 1px;
+
       color: var(--navy);
+
       white-space: nowrap;
     }
+
 
     nav {
       display: flex;
       align-items: center;
+
       gap: 24px;
+
       font-size: 14px;
+
       color: var(--navy);
     }
+
 
     nav a {
       transition: 0.2s ease;
     }
 
+
     nav a:hover {
       color: var(--red);
     }
+
 
     .header-cta {
       display: flex;
       align-items: center;
     }
+
 
     /* =========================
        BUTTONS
@@ -155,41 +192,62 @@
 
     .button {
       display: inline-flex;
+
       align-items: center;
       justify-content: center;
+
       min-height: 52px;
-      padding: 13px 25px;
+
+      padding:
+        13px 25px;
+
       border-radius: 999px;
+
       background: var(--red);
+
       color: white;
+
       font-size: 14px;
       font-weight: bold;
+
       border: 1px solid var(--red);
+
       cursor: pointer;
+
       transition: 0.25s ease;
     }
+
 
     .button:hover {
       transform: translateY(-2px);
       opacity: 0.93;
     }
 
+
     .button-outline {
       background: transparent;
+
       color: var(--navy);
+
       border-color: var(--navy);
     }
+
 
     .button-outline:hover {
       background: var(--navy);
       color: white;
     }
 
+
     .button-small {
       min-height: 42px;
-      padding: 10px 18px;
+
+      padding:
+        10px 18px;
+
       font-size: 13px;
     }
+
 
     /* =========================
        HERO
@@ -197,149 +255,245 @@
 
     .hero {
       padding: 90px 0 85px;
+
       background:
-        radial-gradient(circle at 80% 20%, rgba(212,175,55,0.13), transparent 30%),
-        linear-gradient(180deg, #FFFFFF 0%, #F8F6F1 100%);
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(212,175,55,0.13),
+          transparent 30%
+        ),
+
+        linear-gradient(
+          180deg,
+          #FFFFFF 0%,
+          #F8F6F1 100%
+        );
     }
+
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+
+      grid-template-columns:
+        1.05fr 0.95fr;
+
       align-items: center;
+
       gap: 70px;
     }
 
+
     .hero-kicker {
       display: inline-flex;
+
       gap: 8px;
+
       align-items: center;
-      padding: 8px 13px;
-      border: 1px solid rgba(199,78,82,0.25);
+
+      padding:
+        8px 13px;
+
+      border:
+        1px solid rgba(199,78,82,0.25);
+
       border-radius: 999px;
-      background: rgba(255,255,255,0.75);
+
+      background:
+        rgba(255,255,255,0.75);
+
       font-size: 12px;
+
       font-weight: bold;
+
       color: var(--navy);
+
       margin-bottom: 18px;
     }
+
 
     .eyebrow,
     .section-label {
       color: var(--red);
+
       font-size: 12px;
+
       font-weight: bold;
+
       text-transform: uppercase;
+
       letter-spacing: 1.5px;
     }
+
 
     .eyebrow {
       margin-bottom: 14px;
     }
 
+
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
       font-family: Georgia, serif;
+
       font-weight: normal;
+
       color: var(--navy);
     }
 
+
     h1 {
-      font-size: clamp(44px, 6vw, 72px);
+      font-size:
+        clamp(44px, 6vw, 72px);
+
       line-height: 1.03;
+
       margin-bottom: 25px;
     }
+
 
     h1 span {
       color: var(--red);
     }
 
+
     .hero-description {
       max-width: 650px;
+
       font-size: 19px;
+
       color: var(--muted);
+
       margin-bottom: 20px;
     }
 
+
     .hero-flow {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 8px;
-      margin: 18px 0 28px;
+
+      margin:
+        18px 0 28px;
+
       font-size: 13px;
+
       color: var(--muted);
     }
 
+
     .hero-flow span {
-      padding: 7px 11px;
+      padding:
+        7px 11px;
+
       border-radius: 999px;
+
       background: white;
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
     }
+
 
     .buttons {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 12px;
     }
 
+
     .hero-note {
       margin-top: 18px;
+
       max-width: 600px;
+
       color: #737A8A;
+
       font-size: 13px;
     }
 
+
+    /* =========================
+       PHOTO
+    ========================= */
+
     .photo-frame {
       display: flex;
+
       justify-content: center;
     }
 
+
     .photo-placeholder {
+
       width: min(420px, 100%);
-      min-height: 500px;
+
+      min-height: 560px;
+
       border-radius: 30px;
-      background:
+
+      background-image:
+
         linear-gradient(
-          145deg,
-          rgba(26,35,64,0.96),
-          rgba(26,35,64,0.82)
-        );
+          to top,
+          rgba(26,26,46,0.80),
+          rgba(26,26,46,0.05) 65%
+        ),
+
+        url("IMG_20261005_105134_745.jpg");
+
+      background-size: cover;
+
+      background-position: center;
+
+      background-repeat: no-repeat;
+
       display: flex;
+
       align-items: flex-end;
+
       padding: 35px;
+
       position: relative;
+
       overflow: hidden;
-      box-shadow: 0 25px 70px rgba(26,35,64,0.18);
+
+      box-shadow:
+        0 25px 70px
+        rgba(26,35,64,0.18);
     }
 
-    .photo-placeholder::before {
-      content: "";
-      position: absolute;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background: rgba(212,175,55,0.22);
-      top: -80px;
-      right: -80px;
-    }
 
     .photo-placeholder-inner {
       position: relative;
+
       z-index: 1;
+
       color: white;
     }
 
+
     .photo-name {
       font-family: Georgia, serif;
+
       font-size: 34px;
+
       margin-bottom: 10px;
     }
 
+
     .photo-text {
-      color: #DDE0E8;
+      color: #FFFFFF;
+
       font-size: 15px;
+
+      line-height: 1.5;
     }
+
 
     /* =========================
        GENERAL SECTIONS
@@ -349,18 +503,27 @@
       padding: 90px 0;
     }
 
+
     .section-title {
-      font-size: clamp(36px, 5vw, 56px);
+      font-size:
+        clamp(36px, 5vw, 56px);
+
       line-height: 1.1;
+
       margin-top: 12px;
+
       margin-bottom: 18px;
     }
 
+
     .section-description {
       max-width: 760px;
+
       color: var(--muted);
+
       font-size: 17px;
     }
+
 
     /* =========================
        ABOUT
@@ -370,30 +533,47 @@
       background: white;
     }
 
+
     .about-grid {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
+
+      grid-template-columns:
+        0.9fr 1.1fr;
+
       gap: 70px;
+
       align-items: start;
     }
 
+
     .about-text {
       color: var(--muted);
+
       font-size: 17px;
     }
+
 
     .about-text p {
       margin-bottom: 18px;
     }
 
+
     .about-highlight {
       padding: 28px;
+
       background: var(--cream);
-      border-left: 4px solid var(--gold);
-      border-radius: 0 18px 18px 0;
+
+      border-left:
+        4px solid var(--gold);
+
+      border-radius:
+        0 18px 18px 0;
+
       margin-top: 25px;
+
       color: var(--navy);
     }
+
 
     /* =========================
        METHOD
@@ -403,34 +583,51 @@
       background: var(--light);
     }
 
+
     .method-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 18px;
+
       margin-top: 45px;
     }
 
+
     .method-card {
       padding: 30px 25px;
+
       background: white;
+
       border-radius: 22px;
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
     }
+
 
     .method-icon {
       font-size: 30px;
+
       margin-bottom: 15px;
     }
 
+
     .method-card h3 {
       font-size: 25px;
+
       margin-bottom: 10px;
     }
 
+
     .method-card p {
       color: var(--muted);
+
       font-size: 14px;
     }
+
 
     /* =========================
        TEST
@@ -440,78 +637,123 @@
       background: white;
     }
 
+
     .test-box {
       margin-top: 45px;
+
       padding: 42px;
+
       border-radius: 30px;
+
       background: var(--navy);
+
       color: white;
+
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+
+      grid-template-columns:
+        1.1fr 0.9fr;
+
       gap: 35px;
+
       align-items: center;
     }
 
+
     .test-box h3 {
       color: white;
+
       font-size: 34px;
+
       margin-bottom: 14px;
     }
+
 
     .test-box p {
       color: #D6DAE4;
     }
 
+
     .test-list {
       list-style: none;
+
       margin: 20px 0;
     }
 
+
     .test-list li {
       margin: 10px 0;
+
       color: var(--cream);
     }
 
+
     .test-list li::before {
       content: "✓";
+
       color: var(--gold);
+
       font-weight: bold;
+
       margin-right: 10px;
     }
 
+
     .test-result {
       padding: 28px;
-      border: 1px solid rgba(255,255,255,0.16);
+
+      border:
+        1px solid rgba(255,255,255,0.16);
+
       border-radius: 22px;
-      background: rgba(255,255,255,0.05);
+
+      background:
+        rgba(255,255,255,0.05);
     }
+
 
     .test-result strong {
       display: block;
+
       font-family: Georgia, serif;
+
       font-size: 24px;
+
       margin-bottom: 8px;
     }
+
 
     .test-start {
       margin-top: 28px;
+
       padding: 28px;
-      border: 1px dashed var(--gold);
+
+      border:
+        1px dashed var(--gold);
+
       border-radius: 18px;
+
       background: var(--cream);
     }
 
+
     .test-start strong {
       display: block;
+
       font-family: Georgia, serif;
+
       font-size: 23px;
+
       color: var(--navy);
+
       margin-bottom: 8px;
     }
+
 
     .test-start p {
       color: var(--muted);
     }
+
 
     /* =========================
        HOW IT WORKS
@@ -521,36 +763,55 @@
       background: var(--light);
     }
 
+
     .steps {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+
+      grid-template-columns:
+        repeat(5, 1fr);
+
       gap: 15px;
+
       margin-top: 45px;
     }
 
+
     .step {
       padding: 27px 22px;
+
       background: white;
+
       border-radius: 20px;
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
     }
+
 
     .step-number {
       color: var(--gold);
+
       font-size: 13px;
+
       font-weight: bold;
+
       margin-bottom: 14px;
     }
 
+
     .step h3 {
       font-size: 23px;
+
       margin-bottom: 10px;
     }
 
+
     .step p {
       color: var(--muted);
+
       font-size: 14px;
     }
+
 
     /* =========================
        SPHERES
@@ -560,85 +821,129 @@
       background: white;
     }
 
+
     .sphere-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 18px;
+
       margin-top: 45px;
     }
 
+
     .sphere {
       padding: 30px 25px;
+
       border-radius: 22px;
+
       background: var(--cream);
     }
 
+
     .sphere h3 {
       font-size: 26px;
+
       margin-bottom: 10px;
     }
 
+
     .sphere p {
       color: var(--muted);
+
       font-size: 14px;
     }
 
+
     /* =========================
-       PROOF / CASES
+       CASES
     ========================= */
 
     .proof {
       background: white;
     }
 
+
     .proof-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 18px;
+
       margin-top: 45px;
     }
+
 
     .proof-card {
       padding: 28px;
+
       border-radius: 22px;
+
       background: var(--cream);
     }
+
 
     .proof-card strong {
       display: block;
+
       font-family: Georgia, serif;
+
       font-size: 22px;
+
       margin-bottom: 10px;
+
       color: var(--navy);
     }
+
 
     .proof-card p {
       color: var(--muted);
+
       font-size: 15px;
     }
 
+
     .case-label {
       font-size: 12px;
+
       letter-spacing: 1px;
+
       text-transform: uppercase;
+
       color: var(--red);
+
       font-weight: bold;
+
       margin-bottom: 7px;
     }
 
+
     .code-example {
       margin-top: 45px;
+
       padding: 34px;
+
       border-radius: 25px;
+
       background: var(--cream);
-      border-left: 5px solid var(--red);
+
+      border-left:
+        5px solid var(--red);
     }
+
 
     .code-example strong {
       font-family: Georgia, serif;
+
       font-size: 25px;
+
       color: var(--navy);
     }
+
 
     /* =========================
        REVIEWS
@@ -648,36 +953,56 @@
       background: var(--light);
     }
 
+
     .reviews-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 18px;
+
       margin-top: 45px;
     }
 
+
     .review {
       padding: 30px;
+
       background: white;
+
       border-radius: 22px;
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
     }
+
 
     .review-mark {
       color: var(--gold);
+
       font-size: 35px;
+
       font-family: Georgia, serif;
     }
 
+
     .review p {
       color: var(--muted);
+
       font-size: 15px;
-      margin: 10px 0 20px;
+
+      margin:
+        10px 0 20px;
     }
+
 
     .review-name {
       font-weight: bold;
+
       color: var(--navy);
     }
+
 
     /* =========================
        ARTICLES
@@ -687,42 +1012,197 @@
       background: white;
     }
 
+
     .articles-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 18px;
+
       margin-top: 45px;
     }
 
+
     .article-card {
       padding: 28px;
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
+
       border-radius: 22px;
+
       background: white;
+
       transition: 0.25s ease;
     }
 
+
     .article-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(26,35,64,0.07);
+
+      box-shadow:
+        0 15px 35px
+        rgba(26,35,64,0.07);
     }
+
 
     .article-card h3 {
       font-size: 24px;
-      margin: 10px 0;
+
+      margin:
+        10px 0;
     }
 
-    .article-card p {
+
+    .article-card > p {
       color: var(--muted);
+
       font-size: 15px;
     }
 
-    .article-card a {
-      display: inline-block;
-      margin-top: 16px;
-      color: var(--red);
-      font-weight: bold;
+
+    /* =========================
+       FULL ARTICLES
+    ========================= */
+
+    .article-details {
+      margin-top: 18px;
+
+      padding: 0;
+
+      border: 0;
+
+      background: transparent;
     }
+
+
+    .article-details summary {
+      display: inline-block;
+
+      padding: 9px 0;
+
+      color: var(--red);
+
+      font-family: Arial, sans-serif;
+
+      font-size: 14px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+
+      list-style: none;
+    }
+
+
+    .article-details summary::-webkit-details-marker {
+      display: none;
+    }
+
+
+    .article-details summary::after {
+      content: " ↓";
+    }
+
+
+    .article-details[open]
+    summary::after {
+      content: " ↑";
+    }
+
+
+    .article-content {
+      margin-top: 22px;
+
+      padding-top: 22px;
+
+      border-top:
+        1px solid var(--border);
+
+      color: var(--muted);
+
+      font-size: 15px;
+
+      line-height: 1.75;
+    }
+
+
+    .article-content p {
+      margin-bottom: 17px;
+    }
+
+
+    .article-content h4 {
+      margin:
+        28px 0 12px;
+
+      color: var(--navy);
+
+      font-family: Georgia, serif;
+
+      font-size: 23px;
+
+      font-weight: normal;
+
+      line-height: 1.25;
+    }
+
+
+    .article-content ol,
+    .article-content ul {
+      margin:
+        15px 0 20px 22px;
+    }
+
+
+    .article-content li {
+      margin-bottom: 12px;
+
+      padding-left: 4px;
+    }
+
+
+    .article-content strong {
+      color: var(--navy);
+    }
+
+
+    .article-cta {
+      margin-top: 30px;
+
+      padding: 24px;
+
+      border-radius: 18px;
+
+      background: var(--cream);
+
+      border-left:
+        3px solid var(--gold);
+    }
+
+
+    .article-cta strong {
+      display: block;
+
+      margin-bottom: 8px;
+
+      font-family: Georgia, serif;
+
+      font-size: 22px;
+    }
+
+
+    .article-cta p {
+      margin-bottom: 18px;
+    }
+
+
+    .article-cta .button {
+      width: auto;
+    }
+
 
     /* =========================
        FAQ
@@ -732,59 +1212,88 @@
       background: var(--light);
     }
 
+
     .faq-list {
       max-width: 850px;
+
       margin-top: 40px;
     }
 
+
     details {
       background: white;
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
+
       border-radius: 16px;
+
       padding: 20px 24px;
+
       margin-bottom: 12px;
     }
 
+
     summary {
       cursor: pointer;
+
       font-family: Georgia, serif;
+
       color: var(--navy);
+
       font-size: 19px;
     }
 
+
     details p {
       color: var(--muted);
+
       margin-top: 15px;
+
       font-size: 15px;
     }
 
+
     /* =========================
-       CTA
+       FINAL CTA
     ========================= */
 
     .cta {
       background: var(--navy);
+
       color: white;
+
       text-align: center;
     }
+
 
     .cta .section-label {
       color: var(--gold);
     }
 
+
     .cta .section-title {
       color: white;
+
       max-width: 850px;
+
       margin-left: auto;
+
       margin-right: auto;
     }
 
+
     .cta-description {
       max-width: 700px;
-      margin: 0 auto 28px;
+
+      margin:
+        0 auto 28px;
+
       color: #D6DAE4;
+
       font-size: 17px;
     }
+
 
     /* =========================
        FOOTER
@@ -792,38 +1301,55 @@
 
     footer {
       background: #12192F;
+
       color: #D6DAE4;
+
       padding: 35px 0;
     }
 
+
     .footer-inner {
       display: flex;
+
       justify-content: space-between;
+
       align-items: center;
+
       gap: 20px;
     }
 
+
     .footer-name {
       font-family: Georgia, serif;
+
       font-size: 20px;
+
       margin-bottom: 4px;
+
       color: white;
     }
 
+
     .footer-text {
       font-size: 13px;
+
       color: #AEB5C5;
     }
 
+
     .footer-links {
       display: flex;
+
       gap: 18px;
+
       font-size: 13px;
     }
+
 
     .footer-links a:hover {
       color: var(--gold);
     }
+
 
     /* =========================
        MOBILE
@@ -833,18 +1359,24 @@
 
       .method-grid,
       .sphere-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
+
 
       .steps {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
+
       .steps .step:last-child {
-        grid-column: 1 / -1;
+        grid-column:
+          1 / -1;
       }
 
     }
+
 
     @media (max-width: 900px) {
 
@@ -854,17 +1386,21 @@
         grid-template-columns: 1fr;
       }
 
+
       .hero {
         padding-top: 60px;
       }
+
 
       .photo-frame {
         order: -1;
       }
 
+
       .photo-placeholder {
-        min-height: 390px;
+        min-height: 520px;
       }
+
 
       .proof-grid,
       .reviews-grid,
@@ -874,19 +1410,23 @@
 
     }
 
+
     @media (max-width: 800px) {
 
       nav {
         display: none;
       }
 
+
       .header-cta {
         display: flex;
       }
 
+
       .header-inner {
         min-height: 68px;
       }
+
 
       .logo {
         font-size: 19px;
@@ -894,23 +1434,29 @@
 
     }
 
+
     @media (max-width: 650px) {
 
       .container {
-        width: min(100% - 28px, 1120px);
+        width:
+          min(100% - 28px, 1120px);
       }
+
 
       section {
         padding: 65px 0;
       }
 
+
       h1 {
         font-size: 44px;
       }
 
+
       .section-title {
         font-size: 37px;
       }
+
 
       .method-grid,
       .sphere-grid,
@@ -918,42 +1464,84 @@
         grid-template-columns: 1fr;
       }
 
+
       .steps .step:last-child {
         grid-column: auto;
       }
 
+
       .test-box {
-        padding: 28px 22px;
+        padding:
+          28px 22px;
       }
+
 
       .buttons {
         flex-direction: column;
       }
 
+
       .buttons .button {
         width: 100%;
       }
 
+
+      .photo-placeholder {
+        min-height: 480px;
+
+        border-radius: 24px;
+
+        padding: 25px;
+      }
+
+
+      .photo-name {
+        font-size: 29px;
+      }
+
+
       .footer-inner {
         flex-direction: column;
+
         align-items: flex-start;
       }
+
 
       .footer-links {
         flex-wrap: wrap;
       }
 
+
+      .article-content {
+        font-size: 15px;
+      }
+
+
+      .article-content h4 {
+        font-size: 21px;
+      }
+
+
+      .article-cta {
+        padding: 20px;
+      }
+
     }
+
   </style>
+
 </head>
 
+
 <body>
+
 
 <!-- =========================
      HEADER
 ========================= -->
 
 <header>
+
   <div class="container header-inner">
 
     <a
@@ -964,19 +1552,27 @@
       ЭЛЬМИРА И.
     </a>
 
+
     <nav aria-label="Основная навигация">
 
-      <a href="#method">Система</a>
+      <a href="#method">
+        Система
+      </a>
 
-      <a href="#test">Пройти тест</a>
+      <a href="#test">
+        Пройти тест
+      </a>
 
-      <a href="#reviews">Отзывы</a>
+      <a href="#reviews">
+        Отзывы
+      </a>
 
-      <a href="#articles">Статьи</a>
-
-      <a href="#contact">Начать</a>
+      <a href="#articles">
+        Статьи
+      </a>
 
     </nav>
+
 
     <div class="header-cta">
 
@@ -990,10 +1586,13 @@
     </div>
 
   </div>
+
 </header>
 
 
+
 <main id="top">
+
 
 <!-- =========================
      HERO
@@ -1003,36 +1602,71 @@
 
   <div class="container hero-grid">
 
+
     <div>
 
       <div class="hero-kicker">
-        Эльмира И. · автор системы «Код твоих потребностей»
+
+        Эльмира И.
+        ·
+        автор системы
+        «Код твоих потребностей»
+
       </div>
+
 
       <div class="eyebrow">
+
         Эксперт по эмоциям и потребностям
+
       </div>
 
+
       <h1>
+
         Почему вы снова
-        <span>реагируете именно так?</span>
+
+        <span>
+          реагируете именно так?
+        </span>
+
       </h1>
 
+
       <p class="hero-description">
-        Помогаю понять, что стоит за эмоциональными реакциями,
-        какую потребность вы пытаетесь защитить и почему
-        одни и те же конфликты повторяются.
+
+        Помогаю понять, что стоит за эмоциональными
+        реакциями, какую потребность вы пытаетесь
+        защитить и почему одни и те же конфликты
+        повторяются.
+
       </p>
+
 
       <div class="hero-flow">
 
-        <span>эмоция</span>
-        <span>реакция</span>
-        <span>потребность</span>
-        <span>Код</span>
-        <span>новое действие</span>
+        <span>
+          эмоция
+        </span>
+
+        <span>
+          реакция
+        </span>
+
+        <span>
+          потребность
+        </span>
+
+        <span>
+          Код
+        </span>
+
+        <span>
+          новое действие
+        </span>
 
       </div>
+
 
       <div class="buttons">
 
@@ -1043,6 +1677,7 @@
           Узнать свой Код
         </a>
 
+
         <a
           href="#method"
           class="button button-outline"
@@ -1052,19 +1687,26 @@
 
       </div>
 
+
       <p class="hero-note">
-        2 диагностических опроса → способ реагирования →
-        ведущая потребность → ваш Код → расшифровка
+
+        Бесплатный тест → результат →
+        Telegram → расшифровка
+
       </p>
 
     </div>
 
 
+
+    <!-- ФОТО ЭЛЬМИРЫ -->
+
     <div class="photo-frame">
 
       <div
         class="photo-placeholder"
-        aria-label="Эльмира И. — автор системы «Код твоих потребностей»"
+        role="img"
+        aria-label="Эльмира И. — эксперт по эмоциям и потребностям"
       >
 
         <div class="photo-placeholder-inner">
@@ -1074,9 +1716,13 @@
           </div>
 
           <div class="photo-text">
-            Эксперт по эмоциям и потребностям<br>
-            Автор системы<br>
+
+            Эксперт по эмоциям и потребностям
+            <br>
+
+            Автор системы
             «Код твоих потребностей»
+
           </div>
 
         </div>
@@ -1085,9 +1731,11 @@
 
     </div>
 
+
   </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1098,52 +1746,77 @@
 
   <div class="container about-grid">
 
+
     <div>
 
       <div class="section-label">
         Обо мне
       </div>
 
+
       <h2 class="section-title">
-        Не просто управлять эмоциями.<br>
+
+        Не просто управлять эмоциями.
+        <br>
+
         Понять, что за ними стоит.
+
       </h2>
 
     </div>
 
 
+
     <div class="about-text">
 
       <p>
-        Я — Эльмира И., эксперт по эмоциям и потребностям
-        и автор системы «Код твоих потребностей».
+
+        Я — Эльмира И., эксперт по эмоциям
+        и потребностям и автор системы
+        «Код твоих потребностей».
+
       </p>
 
-      <p>
-        Я помогаю женщинам разобраться в собственных
-        эмоциональных реакциях: почему мы кричим,
-        обижаемся, злимся, контролируем, замыкаемся
-        или снова оказываемся в одном и том же конфликте.
-      </p>
 
       <p>
-        В основе моего подхода — идея о том, что за
-        эмоциональной реакцией может стоять важная
-        для человека потребность.
+
+        Я помогаю женщинам разобраться
+        в собственных эмоциональных реакциях:
+        почему мы кричим, обижаемся, злимся,
+        контролируем, замыкаемся или снова
+        оказываемся в одном и том же конфликте.
+
       </p>
+
+
+      <p>
+
+        В основе моего подхода — идея о том,
+        что за эмоциональной реакцией может
+        стоять важная для человека потребность.
+
+      </p>
+
 
       <div class="about-highlight">
 
         <strong>
-          Эмоция показывает, что для вас сейчас важно.
+
+          Эмоция показывает,
+          что для вас сейчас важно.
+
         </strong>
 
-        <br><br>
 
-        Задача не в том, чтобы запретить себе злиться,
-        обижаться или тревожиться, а в том, чтобы
-        научиться понимать, что стоит за реакцией,
-        и выбирать другой способ действия.
+        <br>
+        <br>
+
+
+        Задача не в том, чтобы запретить себе
+        злиться, обижаться или тревожиться,
+        а в том, чтобы научиться понимать,
+        что стоит за реакцией, и выбирать
+        другой способ действия.
 
       </div>
 
@@ -1154,30 +1827,46 @@
 </section>
 
 
+
 <!-- =========================
      METHOD
 ========================= -->
 
-<section class="method" id="method">
+<section
+  class="method"
+  id="method"
+>
 
   <div class="container">
 
+
     <div class="section-label">
-      Система «Код твоих потребностей»
+
+      Система
+      «Код твоих потребностей»
+
     </div>
 
+
     <h2 class="section-title">
+
       Что стоит за вашей реакцией?
+
     </h2>
 
+
     <p class="section-description">
-      Система помогает увидеть связь между эмоциональной
-      реакцией, способом поведения и потребностью,
-      которую человек пытается защитить или удовлетворить.
+
+      Система помогает увидеть связь между
+      эмоциональной реакцией, способом поведения
+      и потребностью, которую человек пытается
+      защитить или удовлетворить.
+
     </p>
 
 
     <div class="method-grid">
+
 
       <div class="method-card">
 
@@ -1190,11 +1879,15 @@
         </h3>
 
         <p>
-          Потребность в определённости, опоре,
-          предсказуемости и ощущении защищённости.
+
+          Потребность в определённости,
+          опоре, предсказуемости и ощущении
+          защищённости.
+
         </p>
 
       </div>
+
 
 
       <div class="method-card">
@@ -1208,11 +1901,14 @@
         </h3>
 
         <p>
+
           Потребность в эмоциональной связи,
           принятии, принадлежности и контакте.
+
         </p>
 
       </div>
+
 
 
       <div class="method-card">
@@ -1226,11 +1922,15 @@
         </h3>
 
         <p>
-          Потребность быть замеченной, услышанной,
-          признанной и чувствовать собственную ценность.
+
+          Потребность быть замеченной,
+          услышанной, признанной и чувствовать
+          собственную ценность.
+
         </p>
 
       </div>
+
 
 
       <div class="method-card">
@@ -1244,11 +1944,15 @@
         </h3>
 
         <p>
-          Потребность в выборе, самостоятельности,
-          разнообразии и возможности быть собой.
+
+          Потребность в выборе,
+          самостоятельности, разнообразии
+          и возможности быть собой.
+
         </p>
 
       </div>
+
 
     </div>
 
@@ -1257,45 +1961,62 @@
 </section>
 
 
+
 <!-- =========================
      FREE TEST
 ========================= -->
 
-<section class="test-section" id="test">
+<section
+  class="test-section"
+  id="test"
+>
 
   <div class="container">
 
+
     <div class="section-label">
+
       Бесплатная диагностика
+
     </div>
 
+
     <h2 class="section-title">
+
       Узнайте свой Код потребностей
+
     </h2>
 
+
     <p class="section-description">
-      Пройдите тест прямо на сайте.
-      После прохождения вы получите свою
-      расшифровку в Telegram-боте.
+
+      Пройдите бесплатный тест прямо на сайте.
+      После прохождения получите расшифровку
+      результата в Telegram-боте.
+
     </p>
 
 
     <div class="test-box">
 
+
       <div>
 
         <h3>
+
           Как всё происходит
+
         </h3>
+
 
         <ul class="test-list">
 
           <li>
-            Проходите бесплатный тест на сайте
+            Проходите бесплатный тест
           </li>
 
           <li>
-            Получаете свой результат
+            Отвечаете на вопросы о своих реакциях
           </li>
 
           <li>
@@ -1308,40 +2029,51 @@
 
         </ul>
 
+
         <a
           href="#test-start"
           class="button"
         >
+
           Пройти бесплатный тест
+
         </a>
 
       </div>
 
 
+
       <div class="test-result">
 
         <strong>
+
           Бесплатный тест → Telegram
+
         </strong>
 
+
         <p>
+
           На сайте вы проходите диагностику.
           В Telegram-боте получаете расшифровку
           и сможете выбрать следующий шаг:
           расширенную расшифровку, подписку
           или другие материалы.
+
         </p>
 
       </div>
 
+
     </div>
 
 
-    <!--
-      ЗДЕСЬ РАЗМЕСТИ ТЕКУЩИЙ ВИДЖЕТ ТЕСТА.
 
-      После завершения теста пользователь должен
-      переходить в Telegram-бот.
+    <!--
+      ЗДЕСЬ ВСТАВЬ КОД САМОГО ТЕСТА.
+
+      После прохождения теста пользователь
+      должен перейти в Telegram-бот.
 
       Например:
 
@@ -1350,26 +2082,35 @@
       </a>
     -->
 
+
     <div
       id="test-start"
       class="test-start"
     >
 
       <strong>
-        Здесь размещается ваш бесплатный тест
+
+        Здесь размещается бесплатный тест
+
       </strong>
 
+
       <p>
-        Вставьте сюда текущую форму или виджет теста.
-        После завершения теста пользователь должен
-        перейти в Telegram-бот для получения расшифровки.
+
+        Вставьте сюда код вашего теста.
+        После завершения теста пользователь
+        должен перейти в Telegram-бот для
+        получения расшифровки.
+
       </p>
 
     </div>
 
+
   </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1380,23 +2121,34 @@
 
   <div class="container">
 
+
     <div class="section-label">
+
       Как работает система
+
     </div>
 
+
     <h2 class="section-title">
-      От эмоциональной реакции — к пониманию себя.
+
+      От эмоциональной реакции —
+      к пониманию себя.
+
     </h2>
 
+
     <p class="section-description">
+
       Мы не пытаемся просто подавить эмоцию.
       Сначала разбираемся, что её запускает,
       какую потребность она защищает и какой
       привычный сценарий включается дальше.
+
     </p>
 
 
     <div class="steps">
+
 
       <div class="step">
 
@@ -1409,12 +2161,15 @@
         </h3>
 
         <p>
+
           Что произошло?
           Что вы почувствовали?
           Что сделали или захотели сделать?
+
         </p>
 
       </div>
+
 
 
       <div class="step">
@@ -1428,12 +2183,16 @@
         </h3>
 
         <p>
-          Контроль, давление, прилипание
-          или побег — какой способ реагирования
+
+          Контроль, давление,
+          прилипание или побег —
+          какой способ реагирования
           включается у вас?
+
         </p>
 
       </div>
+
 
 
       <div class="step">
@@ -1447,12 +2206,15 @@
         </h3>
 
         <p>
-          Безопасность, близость, значимость
-          или свобода — что оказалось
-          особенно важным?
+
+          Безопасность, близость,
+          значимость или свобода —
+          что оказалось особенно важным?
+
         </p>
 
       </div>
+
 
 
       <div class="step">
@@ -1466,12 +2228,15 @@
         </h3>
 
         <p>
+
           Сочетание потребности и реакции
           помогает увидеть устойчивый
           сценарий поведения.
+
         </p>
 
       </div>
+
 
 
       <div class="step">
@@ -1485,18 +2250,21 @@
         </h3>
 
         <p>
+
           Понимаем, как выразить потребность
-          и действовать иначе, не повторяя
-          привычный конфликт.
+          и действовать иначе.
+
         </p>
 
       </div>
+
 
     </div>
 
   </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1507,23 +2275,33 @@
 
   <div class="container">
 
+
     <div class="section-label">
+
       Где проявляется ваш Код
+
     </div>
 
+
     <h2 class="section-title">
-      Один человек — разные реакции
-      в разных сферах жизни.
+
+      Один человек —
+      разные реакции в разных сферах жизни.
+
     </h2>
 
+
     <p class="section-description">
+
       Один и тот же человек может совершенно
       по-разному реагировать в отношениях,
       с детьми, на работе и наедине с собой.
+
     </p>
 
 
     <div class="sphere-grid">
+
 
       <div class="sphere">
 
@@ -1532,12 +2310,15 @@
         </h3>
 
         <p>
-          Обида, ревность, контроль, требования
-          внимания, отдаление и повторяющиеся
-          конфликты с партнёром.
+
+          Обида, ревность, контроль,
+          требования внимания, отдаление
+          и повторяющиеся конфликты.
+
         </p>
 
       </div>
+
 
 
       <div class="sphere">
@@ -1547,12 +2328,15 @@
         </h3>
 
         <p>
+
           Раздражение, крик, давление,
           чувство вины и сложности
           с границами.
+
         </p>
 
       </div>
+
 
 
       <div class="sphere">
@@ -1562,12 +2346,15 @@
         </h3>
 
         <p>
-          Самокритика, тревога, внутренний
-          контроль, чувство недостаточности
-          и сложности с собственными желаниями.
+
+          Самокритика, тревога,
+          внутренний контроль,
+          чувство недостаточности.
+
         </p>
 
       </div>
+
 
 
       <div class="sphere">
@@ -1577,12 +2364,15 @@
         </h3>
 
         <p>
-          Реакции на критику, конкуренцию,
-          давление, неопределённость
-          и оценку окружающих.
+
+          Реакции на критику,
+          конкуренцию, давление,
+          неопределённость и оценку.
+
         </p>
 
       </div>
+
 
     </div>
 
@@ -1591,27 +2381,38 @@
 </section>
 
 
+
 <!-- =========================
      CASES
 ========================= -->
 
-<section class="proof" id="reviews">
+<section class="proof">
 
   <div class="container">
 
+
     <div class="section-label">
+
       Как это работает на практике
+
     </div>
 
+
     <h2 class="section-title">
-      Не «со мной что-то не так».<br>
+
+      Не «со мной что-то не так».
+      <br>
       А «теперь я понимаю, что происходит».
+
     </h2>
 
+
     <p class="section-description">
+
       Метод помогает рассматривать не только
       саму эмоцию, но и сценарий, который
       запускается за ней.
+
     </p>
 
 
@@ -1625,18 +2426,24 @@
         </div>
 
         <strong>
-          «Меня бесит, когда муж не предупреждает»
+
+          «Меня бесит,
+          когда муж не предупреждает»
+
         </strong>
 
         <p>
+
           Реакция: контроль.
-          Потребность: безопасность.
+          Возможная потребность: безопасность.
           Вместо бесконечных проверок —
           договорённость о том, какая информация
-          даёт чувство определённости.
+          даёт ощущение определённости.
+
         </p>
 
       </div>
+
 
 
       <div class="proof-card">
@@ -1646,17 +2453,23 @@
         </div>
 
         <strong>
-          «Я молчу, но жду, что меня поймут»
+
+          «Я молчу, но жду,
+          что меня поймут»
+
         </strong>
 
         <p>
-          Реакция: ожидание близости.
-          Потребность: быть услышанной.
+
+          Реакция: обида и отдаление.
+          Возможная потребность: близость.
           Следующий шаг — назвать потребность
           прямо, а не проверять другого молчанием.
+
         </p>
 
       </div>
+
 
 
       <div class="proof-card">
@@ -1666,17 +2479,23 @@
         </div>
 
         <strong>
-          «Я взрываюсь из-за мелочей»
+
+          «Я взрываюсь
+          из-за мелочей»
+
         </strong>
 
         <p>
+
           Разбираем не только саму вспышку,
-          а то, что было накоплено до неё:
+          но и то, что было накоплено до неё:
           какая потребность долго оставалась
           без внимания.
+
         </p>
 
       </div>
+
 
     </div>
 
@@ -1688,36 +2507,48 @@
       </div>
 
       <strong>
-        Ситуация → эмоция → реакция → потребность → Код → новое действие
+
+        Ситуация →
+        эмоция →
+        реакция →
+        потребность →
+        Код →
+        новое действие
+
       </strong>
 
     </div>
+
 
   </div>
 
 </section>
 
 
+
 <!-- =========================
      REVIEWS
 ========================= -->
 
-<section class="reviews">
+<section
+  class="reviews"
+  id="reviews"
+>
 
   <div class="container">
+
 
     <div class="section-label">
       Отзывы
     </div>
 
-    <h2 class="section-title">
-      Что замечают женщины после диагностики
-    </h2>
 
-    <p class="section-description">
-      Здесь лучше всего показывать реальные отзывы
-      после прохождения теста и получения расшифровки.
-    </p>
+    <h2 class="section-title">
+
+      Что замечают женщины
+      после диагностики
+
+    </h2>
 
 
     <div class="reviews-grid">
@@ -1730,10 +2561,12 @@
         </div>
 
         <p>
+
           Я впервые увидела связь между тем,
           что меня задевает, и тем, как я начинаю
           себя вести. Раньше просто думала,
           что слишком остро реагирую.
+
         </p>
 
         <div class="review-name">
@@ -1743,6 +2576,7 @@
       </div>
 
 
+
       <div class="review">
 
         <div class="review-mark">
@@ -1750,10 +2584,12 @@
         </div>
 
         <p>
+
           Самое ценное — я начала замечать
           свою реакцию раньше. Теперь понимаю,
           что за раздражением часто стоит
           совсем другая потребность.
+
         </p>
 
         <div class="review-name">
@@ -1763,6 +2599,7 @@
       </div>
 
 
+
       <div class="review">
 
         <div class="review-mark">
@@ -1770,9 +2607,11 @@
         </div>
 
         <p>
+
           Благодаря разбору я стала лучше понимать,
           почему одни и те же ситуации вызывают
           у меня одинаковую реакцию.
+
         </p>
 
         <div class="review-name">
@@ -1781,101 +2620,888 @@
 
       </div>
 
+
     </div>
 
   </div>
 
 </section>
+
 
 
 <!-- =========================
      ARTICLES
 ========================= -->
 
-<section class="articles" id="articles">
+<section
+  class="articles"
+  id="articles"
+>
 
   <div class="container">
+
 
     <div class="section-label">
       Статьи
     </div>
 
+
     <h2 class="section-title">
+
       Разбираем эмоциональные реакции
       на реальных ситуациях.
+
     </h2>
+
+
+    <p class="section-description">
+
+      Почему мы контролируем, обижаемся,
+      кричим и снова попадаем в одни и те же
+      конфликты? Разбираем, что может стоять
+      за привычной реакцией и какую потребность
+      она пытается защитить.
+
+    </p>
+
 
 
     <div class="articles-grid">
 
 
+      <!-- =========================
+           СТАТЬЯ 1
+      ========================= -->
+
       <article class="article-card">
 
         <div class="case-label">
-          Разбор реакции
+
+          Разбор реакции · Контроль
+
         </div>
 
+
         <h3>
+
           Почему я всё контролирую?
+
         </h3>
 
+
         <p>
+
           Когда контроль становится способом
           вернуть ощущение безопасности и почему
           он часто усиливает конфликт.
+
         </p>
 
-        <a href="#test">
-          Проверить свой Код →
-        </a>
+
+        <details class="article-details">
+
+          <summary>
+            Читать статью
+          </summary>
+
+
+          <div class="article-content">
+
+
+            <p>
+
+              Вы когда-нибудь ловили себя
+              на желании перепроверить всё:
+              от того, закрыта ли дверь,
+              до того, правильно ли партнёр
+              помыл посуду?
+
+            </p>
+
+
+            <p>
+
+              Кажется, что если вы отпустите
+              ситуацию, всё рухнет. Но чем сильнее
+              вы сжимаете руль, тем больше напряжения
+              и конфликтов возникает вокруг.
+              Почему так происходит?
+
+            </p>
+
+
+            <h4>
+
+              Контроль как способ вернуть
+              ощущение безопасности
+
+            </h4>
+
+
+            <p>
+
+              За стремлением всё контролировать
+              может стоять не сила, а тревога
+              и потребность в безопасности.
+
+            </p>
+
+
+            <p>
+
+              Когда ситуация кажется непредсказуемой,
+              человек пытается вернуть ощущение
+              определённости через контроль.
+
+            </p>
+
+
+            <p>
+
+              Постепенно может сформироваться
+              привычный сценарий:
+              «Если я всё проверю и проконтролирую,
+              мне будет спокойнее».
+
+            </p>
+
+
+            <p>
+
+              Проблема в том, что окружающий мир
+              невозможно контролировать полностью.
+              А попытка сделать это может только
+              увеличивать напряжение.
+
+            </p>
+
+
+            <h4>
+
+              Парадокс контроля:
+              почему он усиливает конфликт
+
+            </h4>
+
+
+            <p>
+
+              Контроль действительно может дать
+              ощущение спокойствия на короткое время.
+              Но если он становится постоянным
+              способом реагирования, появляются
+              новые последствия.
+
+            </p>
+
+
+            <ol>
+
+              <li>
+
+                <strong>
+                  Истощение.
+                </strong>
+
+                Вы не можете полностью расслабиться,
+                потому что постоянно приходится
+                проверять, контролировать и исправлять.
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Конфликты.
+                </strong>
+
+                Близкие могут воспринимать контроль
+                как недоверие и давление.
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Потеря близости.
+                </strong>
+
+                Чем больше человек пытается управлять
+                действиями другого, тем сильнее другой
+                может сопротивляться или отстраняться.
+
+              </li>
+
+            </ol>
+
+
+            <p>
+
+              Получается парадокс:
+              реакция, которая должна помочь
+              почувствовать безопасность, иногда
+              становится причиной нового напряжения.
+
+            </p>
+
+
+            <h4>
+
+              Что можно сделать?
+
+            </h4>
+
+
+            <p>
+
+              Задача не в том, чтобы полностью
+              отказаться от контроля.
+
+              Важно научиться различать:
+              что действительно зависит от вас,
+              а что находится вне вашей власти.
+
+            </p>
+
+
+            <ul>
+
+              <li>
+
+                Разделите зоны контроля.
+                Что зависит от вас:
+                ваши слова, решения, границы
+                и реакции?
+
+              </li>
+
+
+              <li>
+
+                Начните с малого.
+                Делегируйте одну задачу
+                и попробуйте не перепроверять её.
+
+              </li>
+
+
+              <li>
+
+                Спросите себя:
+                «Что я сейчас пытаюсь предотвратить?»
+
+              </li>
+
+
+              <li>
+
+                И главное:
+                «Какая потребность стоит за моим
+                желанием всё контролировать?»
+
+              </li>
+
+            </ul>
+
+
+            <div class="article-cta">
+
+              <strong>
+
+                Проверьте свой Код
+
+              </strong>
+
+
+              <p>
+
+                Если контроль часто становится
+                вашей привычной реакцией, бесплатный
+                тест поможет посмотреть, какая потребность
+                может стоять за этим способом реагирования.
+
+              </p>
+
+
+              <a
+                href="#test"
+                class="button button-small"
+              >
+
+                Пройти бесплатный тест
+
+              </a>
+
+            </div>
+
+
+          </div>
+
+        </details>
 
       </article>
 
 
+
+      <!-- =========================
+           СТАТЬЯ 2
+      ========================= -->
+
       <article class="article-card">
 
         <div class="case-label">
-          Отношения
+
+          Разбор реакции · Обида
+
         </div>
 
+
         <h3>
+
           Почему я обижаюсь,
           когда меня не слышат?
+
         </h3>
 
+
         <p>
+
           Разбираем связь между обидой,
           потребностью в близости и привычным
           способом реагирования.
+
         </p>
 
-        <a href="#test">
-          Узнать свой Код →
-        </a>
+
+        <details class="article-details">
+
+          <summary>
+            Читать статью
+          </summary>
+
+
+          <div class="article-content">
+
+
+            <p>
+
+              Обида — одно из самых сложных
+              переживаний в отношениях.
+
+              Она может не выражаться открытым
+              конфликтом, а оставаться внутри
+              и постепенно увеличивать дистанцию
+              между людьми.
+
+            </p>
+
+
+            <p>
+
+              Особенно больно, когда близкий человек
+              будто бы не слышит вас.
+
+            </p>
+
+
+            <p>
+
+              «Я же говорила!»
+              «Почему ты меня не понимаешь?»
+              «Тебе вообще есть до меня дело?»
+
+            </p>
+
+
+            <p>
+
+              Вместо разговора мы иногда замыкаемся,
+              ждём, что другой сам догадается,
+              что произошло, и ещё сильнее отдаляемся.
+
+            </p>
+
+
+            <h4>
+
+              Что может скрываться за обидой?
+
+            </h4>
+
+
+            <p>
+
+              Обида часто возникает там,
+              где человеку важно быть услышанным,
+              замеченным и эмоционально связанным
+              с другим.
+
+            </p>
+
+
+            <p>
+
+              Поэтому за реакцией обиды может стоять
+              потребность в близости, внимании,
+              принятии или значимости.
+
+            </p>
+
+
+            <p>
+
+              Когда эта потребность остаётся
+              без ответа, человек может воспринимать
+              ситуацию не просто как «меня сейчас
+              не услышали», а как «я не важна»,
+              «меня не понимают», «до меня нет дела».
+
+            </p>
+
+
+            <p>
+
+              И тогда эмоциональная реакция становится
+              намного сильнее самой ситуации.
+
+            </p>
+
+
+            <h4>
+
+              Привычный способ реагирования
+
+            </h4>
+
+
+            <p>
+
+              Обида может становиться привычным
+              способом показать другому человеку,
+              что нам больно и что нам чего-то не хватает.
+
+            </p>
+
+
+            <p>
+
+              Возникает внутреннее ожидание:
+
+              «Я обижусь — и он сам поймёт».
+
+            </p>
+
+
+            <p>
+
+              Но другой человек не умеет читать мысли.
+
+              В итоге происходит обратное:
+              мы хотим близости, но своей реакцией
+              создаём ещё большую дистанцию.
+
+            </p>
+
+
+            <h4>
+
+              Как разорвать этот круг?
+
+            </h4>
+
+
+            <ol>
+
+              <li>
+
+                <strong>
+                  Отследите момент.
+                </strong>
+
+                Когда чувствуете, что начинаете
+                обижаться, остановитесь и спросите:
+                «Что именно меня сейчас задело?»
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Назовите потребность.
+                </strong>
+
+                Спросите себя:
+                «Чего мне сейчас не хватает —
+                внимания, поддержки, близости,
+                признания или чего-то другого?»
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Переведите обиду в просьбу.
+                </strong>
+
+                Например:
+                «Мне важно, чтобы ты сейчас меня
+                выслушал. Мне нужна твоя поддержка».
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Говорите о себе.
+                </strong>
+
+                Вместо:
+                «Ты меня никогда не слушаешь» —
+                попробуйте:
+                «Я чувствую себя одиноко,
+                когда мои слова остаются без ответа».
+
+              </li>
+
+            </ol>
+
+
+            <div class="article-cta">
+
+              <strong>
+
+                Узнать свой Код
+
+              </strong>
+
+
+              <p>
+
+                Если вы часто обижаетесь,
+                замыкаетесь или ждёте, что близкий
+                человек сам догадается, попробуйте
+                пройти бесплатный тест.
+
+              </p>
+
+
+              <a
+                href="#test"
+                class="button button-small"
+              >
+
+                Узнать свой Код
+
+              </a>
+
+            </div>
+
+
+          </div>
+
+        </details>
 
       </article>
 
 
+
+      <!-- =========================
+           СТАТЬЯ 3
+      ========================= -->
+
       <article class="article-card">
 
         <div class="case-label">
-          Дети
+
+          Дети · Эмоциональные реакции
+
         </div>
 
+
         <h3>
+
           Почему я кричу на ребёнка
           из-за мелочей?
+
         </h3>
 
+
         <p>
-          Что может стоять за вспышкой раздражения
-          и как увидеть потребность до того,
-          как включится привычная реакция.
+
+          Почему после крика приходит чувство вины
+          и как увидеть то, что происходит до вспышки.
+
         </p>
 
-        <a href="#test">
-          Разобрать свою реакцию →
-        </a>
+
+        <details class="article-details">
+
+          <summary>
+            Читать статью
+          </summary>
+
+
+          <div class="article-content">
+
+
+            <p>
+
+              Вы обожаете своего ребёнка.
+
+            </p>
+
+
+            <p>
+
+              Но вот он снова не убрал игрушки,
+              пролил сок или не услышал просьбу
+              с первого раза — и вы взрываетесь.
+
+            </p>
+
+
+            <p>
+
+              Кричите, а потом чувствуете стыд,
+              вину и обещаете себе:
+              «В следующий раз я обязательно
+              буду спокойнее».
+
+            </p>
+
+
+            <p>
+
+              А потом ситуация повторяется.
+
+            </p>
+
+
+            <h4>
+
+              Дело может быть не в игрушках
+
+            </h4>
+
+
+            <p>
+
+              Иногда крик на ребёнка из-за мелочи
+              оказывается реакцией не только на то,
+              что произошло прямо сейчас.
+
+            </p>
+
+
+            <p>
+
+              Когда взрослый устал, перегружен,
+              давно не отдыхал, испытывает недостаток
+              поддержки или постоянно находится
+              в режиме «надо», эмоционального ресурса
+              становится меньше.
+
+            </p>
+
+
+            <p>
+
+              Тогда небольшое событие может стать
+              последней каплей.
+
+            </p>
+
+
+            <p>
+
+              Пролитый сок или разбросанные игрушки
+              становятся триггером, но напряжение
+              могло накапливаться задолго до этого.
+
+            </p>
+
+
+            <h4>
+
+              Почему именно дети
+              становятся триггером?
+
+            </h4>
+
+
+            <p>
+
+              Дети находятся рядом с нами постоянно.
+
+              С ними возникает огромное количество
+              бытовых ситуаций: просьбы, повторения,
+              ограничения, спешка, домашние дела.
+
+            </p>
+
+
+            <p>
+
+              Поэтому именно в отношениях с ребёнком
+              могут особенно часто проявляться наши
+              привычные способы реагирования.
+
+            </p>
+
+
+            <p>
+
+              Это не делает крик нормой.
+
+              Но понимание механизма помогает перейти
+              от одного только чувства вины к поиску
+              причины реакции.
+
+            </p>
+
+
+            <h4>
+
+              Что можно сделать?
+
+            </h4>
+
+
+            <ol>
+
+              <li>
+
+                <strong>
+                  Правило паузы.
+                </strong>
+
+                Если чувствуете, что закипаете,
+                по возможности остановите разговор
+                и возьмите несколько минут паузы.
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Проверьте своё состояние.
+                </strong>
+
+                Когда вы последний раз отдыхали?
+                Ели? Спали? Были ли у вас сегодня
+                хотя бы несколько минут только для себя?
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Посмотрите на нагрузку.
+                </strong>
+
+                Не пытаетесь ли вы одновременно
+                контролировать слишком много задач,
+                людей и процессов?
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Просите о помощи.
+                </strong>
+
+                Иногда снижение количества нагрузки
+                работает лучше, чем попытка ещё сильнее
+                контролировать собственные эмоции.
+
+              </li>
+
+
+              <li>
+
+                <strong>
+                  Восстанавливайте контакт.
+                </strong>
+
+                Если вы уже накричали, можно признать
+                свою ошибку и извиниться:
+
+                «Прости. Я очень устала и сорвалась.
+                Ты не виноват в моей реакции».
+
+              </li>
+
+            </ol>
+
+
+            <h4>
+
+              Самое важное
+
+            </h4>
+
+
+            <p>
+
+              Цель не в том, чтобы стать идеальной мамой,
+              которая никогда не злится.
+
+            </p>
+
+
+            <p>
+
+              Важно научиться раньше замечать момент,
+              когда напряжение начинает накапливаться,
+              и понимать, какая потребность стоит
+              за вашей реакцией.
+
+            </p>
+
+
+            <div class="article-cta">
+
+              <strong>
+
+                Поймите свой способ реагирования
+
+              </strong>
+
+
+              <p>
+
+                Пройдите бесплатный тест и узнайте,
+                какой способ реагирования включается
+                у вас и какая потребность может
+                стоять за ним.
+
+              </p>
+
+
+              <a
+                href="#test"
+                class="button button-small"
+              >
+
+                Пройти бесплатный тест
+
+              </a>
+
+            </div>
+
+
+          </div>
+
+        </details>
 
       </article>
 
@@ -1885,6 +3511,7 @@
   </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1895,12 +3522,18 @@
 
   <div class="container">
 
+
     <div class="section-label">
+
       Частые вопросы
+
     </div>
 
+
     <h2 class="section-title">
+
       Что важно знать о системе
+
     </h2>
 
 
@@ -1910,79 +3543,111 @@
       <details>
 
         <summary>
-          Что такое «Код твоих потребностей»?
+
+          Что такое
+          «Код твоих потребностей»?
+
         </summary>
 
+
         <p>
+
           Это авторская система, которая помогает
           увидеть связь между эмоциональной реакцией,
           привычным способом поведения и потребностью,
           которая стоит за этой реакцией.
+
         </p>
 
       </details>
 
 
+
       <details>
 
         <summary>
+
           Что я узнаю после теста?
+
         </summary>
 
+
         <p>
+
           Вы узнаете свой способ реагирования,
           ведущую потребность и свой Код.
           Подробная расшифровка результата
           приходит в Telegram-боте.
+
         </p>
 
       </details>
 
 
+
       <details>
 
         <summary>
+
           Тест бесплатный?
+
         </summary>
 
+
         <p>
+
           Да. Бесплатный тест проходит прямо
           на сайте. После его завершения вы
           переходите в Telegram-бот, где получаете
           расшифровку результата.
+
         </p>
 
       </details>
 
 
+
       <details>
 
         <summary>
-          Код — это диагноз или характеристика личности?
+
+          Код — это диагноз?
+
         </summary>
 
+
         <p>
-          Нет. Код не является диагнозом и не должен
-          восприниматься как неизменный ярлык личности.
+
+          Нет. Код не является диагнозом
+          и не должен восприниматься как
+          неизменный ярлык личности.
+
           Это способ увидеть привычный сценарий
           эмоционального реагирования.
+
         </p>
 
       </details>
 
 
+
       <details>
 
         <summary>
+
           Что дальше после получения расшифровки?
+
         </summary>
 
+
         <p>
+
           В Telegram-боте можно выбрать следующий
           шаг в зависимости от вашего запроса:
           получить расширенную расшифровку,
           подписаться на материалы или перейти
           к другим продуктам.
+
         </p>
 
       </details>
@@ -1993,42 +3658,62 @@
   </div>
 
 </section>
+
 
 
 <!-- =========================
      FINAL CTA
 ========================= -->
 
-<section class="cta" id="contact">
+<section
+  class="cta"
+  id="contact"
+>
 
   <div class="container">
 
+
     <div class="section-label">
+
       Начните бесплатно
+
     </div>
 
+
     <h2 class="section-title">
-      Поймите, почему вы реагируете именно так.
+
+      Поймите, почему вы
+      реагируете именно так.
+
     </h2>
 
+
     <p class="cta-description">
+
       Пройдите бесплатный тест на сайте
       и получите расшифровку своего Кода
       в Telegram-боте.
+
     </p>
+
 
     <a
       href="#test"
       class="button"
     >
+
       Пройти бесплатный тест
+
     </a>
+
 
   </div>
 
 </section>
 
+
 </main>
+
 
 
 <!-- =========================
@@ -2039,15 +3724,22 @@
 
   <div class="container footer-inner">
 
+
     <div>
 
       <div class="footer-name">
+
         © 2026 Эльмира И.
+
       </div>
 
+
       <div class="footer-text">
-        Эксперт по эмоциям и потребностям ·
-        Автор системы «Код твоих потребностей»
+
+        Эксперт по эмоциям и потребностям
+        · Автор системы
+        «Код твоих потребностей»
+
       </div>
 
     </div>
@@ -2069,6 +3761,7 @@
 
     </div>
 
+
   </div>
 
 </footer>
@@ -2076,4 +3769,6 @@
 
 </body>
 </html>
+
+
 
